@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Privacy Policy - Intro Skipper | Your Data, Your Privacy</title>
+        <meta
+            name="description"
+            content="Learn how Intro Skipper protects your privacy. We don't collect, store, or share any personal data. Complete transparency about our privacy practices."
+        />
+
+        <!-- SEO Meta Tags -->
+        <meta
+            name="keywords"
+            content="intro skipper privacy policy, data protection, privacy-focused extension, no data collection"
+        />
+        <meta name="author" content="Sourav" />
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="English" />
+
+        <!-- Open Graph Meta Tags -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Privacy Policy - Intro Skipper" />
+        <meta
+            property="og:description"
+            content="Learn how Intro Skipper protects your privacy. We don't collect, store, or share any personal data."
+        />
+        <meta
+            property="og:url"
+            content="https://introskipper.dsourav.com/privacy"
+        />
+        <meta property="og:site_name" content="Intro Skipper" />
+        <meta
+            property="og:image"
+            content="https://introskirper.com/assets/icons/logo.png"
+        />
+
+        <!-- Twitter Card Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Privacy Policy - Intro Skipper" />
+        <meta
+            name="twitter:description"
+            content="Learn how Intro Skipper protects your privacy. We don't collect, store, or share any personal data."
+        />
+        <meta
+            name="twitter:image"
+            content="https://introskirper.com/assets/icons/logo.png"
+        />
+
+        <!-- Additional SEO Meta Tags -->
+        <meta name="theme-color" content="#ff6b35" />
+        <meta name="msapplication-TileColor" content="#ff6b35" />
+
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://introskipper.dsourav.com/privacy" />
+
+        <link
+            rel="icon"
+            type="image/png"
+            href="assets/icons/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="assets/icons/apple-touch-icon.png"
+        />
+        <link rel="manifest" href="assets/site.webmanifest" />
+
+        <!-- Tailwind CSS -->
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- Custom Tailwind Config -->
+        <script>
+            tailwind.config = {
+                darkMode: "media",
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: "#ff6b35",
+                            secondary: "#1a1a1a",
+                        },
+                    },
+                },
+            };
+        </script>
+
+        <style>
+            @media (prefers-color-scheme: dark) {
+                .hero-gradient {
+                    background: linear-gradient(
+                        135deg,
+                        #0f0f0f 0%,
+                        #1a1a1a 100%
+                    );
+                }
+            }
+
+            @media (prefers-color-scheme: light) {
+                .hero-gradient {
+                    background: linear-gradient(
+                        135deg,
+                        #f8fafc 0%,
+                        #e2e8f0 100%
+                    );
+                }
+            }
+
+            .privacy-card:hover {
+                transform: translateY(-2px);
+            }
+
+            .section-card {
+                transition: all 0.3s ease;
+            }
+
+            .section-card:hover {
+                box-shadow: 0 4px 20px rgba(255, 107, 53, 0.1);
+            }
+        </style>
+    </head>
+
+    <body
+        class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300"
+    >
+        <!-- Header -->
+        <header
+            class="fixed top-0 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700 z-50"
+        >
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-16">
+                    <div class="flex items-center space-x-2">
+                        <img
+                            src="assets/icons/logo.png"
+                            alt="intro skipper logo"
+                            class="w-8 h-8"
+                        />
+                        <span class="text-xl font-bold text-primary"
+                            >Intro Skipper</span
+                        >
+                    </div>
+                    <nav class="hidden md:flex space-x-8">
+                        <a
+                            href="index.html"
+                            class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
+                            >Home</a
+                        >
+                        <a
+                            href="index.html#features"
+                            class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
+                            >Features</a
+                        >
+                        <a
+                            href="contact.html"
+                            class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
+                            >Contact</a
+                        >
+                        <a href="#privacy" class="text-primary">Privacy</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero-gradient pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="mb-8">
+                    <div class="text-6xl mb-4">🔒</div>
+                    <h1
+                        class="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-orange-500 bg-clip-text text-transparent"
+                    >
+                        Privacy Policy
+                    </h1>
+                    <p
+                        class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto"
+                    >
+                        Your privacy matters. Here's how we protect it.
+                        <span class="text-primary font-semibold"
+                            >Spoiler: We don't collect anything!</span
+                        >
+                    </p>
+                </div>
+
+                <div class="text-sm text-gray-500 dark:text-gray-400">
+                    Last updated: June 23, 2025
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Summary -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-800">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold mb-4">
+                        TL;DR - The Quick Version 📝
+                    </h2>
+                    <p class="text-xl text-gray-600 dark:text-gray-300">
+                        We believe in radical transparency. Here's the short
+                        version:
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div
+                        class="privacy-card bg-white dark:bg-gray-900 p-6 rounded-2xl shadow-lg transition-all duration-300 text-center"
+                    >
+                        <div class="text-3xl mb-3">🚫</div>
+                        <h3 class="font-semibold text-lg mb-2">
+                            Zero Data Collection
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm">
+                            We don't collect, store, or transmit any personal
+                            data whatsoever.
+                        </p>
+                    </div>
+
+                    <div
+                        class="privacy-card bg-white dark:bg-gray-900 p-6 rounded-2xl shadow-lg transition-all duration-300 text-center"
+                    >
+                        <div class="text-3xl mb-3">💾</div>
+                        <h3 class="font-semibold text-lg mb-2">
+                            Local Storage Only
+                        </h3>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm">
+                            All settings are stored locally on your device.
+                        </p>
+                    </div>
+
+                    <div
+                        class="privacy-card bg-white dark:bg-gray-900 p-6 rounded-2xl shadow-lg transition-all duration-300 text-center"
+                    >
+                        <div class="text-3xl mb-3">🔓</div>
+                        <h3 class="font-semibold text-lg mb-2">Open Source</h3>
+                        <p class="text-gray-600 dark:text-gray-300 text-sm">
+                            Our code is public. Verify our privacy claims
+                            yourself.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Privacy Policy -->
+        <section id="privacy" class="py-20 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-12">
+                    <!-- Introduction -->
+                    <div
+                        class="section-card bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg"
+                    >
+                        <h2 class="text-2xl font-bold mb-4 flex items-center">
+                            <span class="text-2xl mr-3">👋</span>
+                            Introduction
+                        </h2>
+                        <div
+                            class="prose prose-gray dark:prose-invert max-w-none"
+                        >
+                            <p
+                                class="text-gray-600 dark:text-gray-300 leading-relaxed"
+                            >
+                                Welcome to Intro Skipper! This Privacy Policy
+                                explains how we handle your information when you
+                                use our browser extension. We've designed this
+                                policy to be clear, transparent, and easy to
+                                understand.
+                            </p>
+                            <p
+                                class="text-gray-600 dark:text-gray-300 leading-relaxed mt-4"
+                            >
+                                <strong class="text-primary"
+                                    >The bottom line:</strong
+                                >
+                                We don't collect, store, process, or share any
+                                of your personal data. This extension operates
+                                entirely on your device without sending any
+                                information to our servers or third parties.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Information We Don't Collect -->
+                    <div
+                        class="section-card bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg"
+                    >
+                        <h2 class="text-2xl font-bold mb-4 flex items-center">
+                            <span class="text-2xl mr-3">🚫</span>
+                            Information We Don't Collect
+                        </h2>
+                        <div
+                            class="prose prose-gray dark:prose-invert max-w-none"
+                        >
+                            <p
+                                class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4"
+                            >
+                                We want to be crystal clear about what we DON'T
+                                do:
+                            </p>
+                            <ul
+                                class="space-y-2 text-gray-600 dark:text-gray-300"
+                            >
+                                <li class="flex items-start">
+                                    <span class="text-red-500 mr-2">✗</span>
+                                    <span
+                                        >Personal information (name, email,
+                                        address, phone number)</span
+                                    >
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-red-500 mr-2">✗</span>
+                                    <span
+                                        >Browsing history or website
+                                        activity</span
+                                    >
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-red-500 mr-2">✗</span>
+                                    <span
+                                        >What you watch on streaming
+                                        platforms</span
+                                    >
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-red-500 mr-2">✗</span>
+                                    <span>Usage analytics or statistics</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-red-500 mr-2">✗</span>
+                                    <span
+                                        >Device information or IP
+                                        addresses</span
+                                    >
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-red-500 mr-2">✗</span>
+                                    <span>Cookies or tracking data</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-red-500 mr-2">✗</span>
+                                    <span>Location data</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- How the Extension Works -->
+                    <div
+                        class="section-card bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg"
+                    >
+                        <h2 class="text-2xl font-bold mb-4 flex items-center">
+                            <span class="text-2xl mr-3">⚙️</span>
+                            How the Extension Works
+                        </h2>
+                        <div
+                            class="prose prose-gray dark:prose-invert max-w-none"
+                        >
+                            <p
+                                class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4"
+                            >
+                                Intro Skipper operates entirely within your
+                                browser:
+                            </p>
+                            <div class="space-y-4">
+                                <div
+                                    class="bg-gray-50 dark:bg-gray-700 p-4 rounded-xl"
+                                >
+                                    <h4 class="font-semibold text-primary mb-2">
+                                        🎯 Detection Process
+                                    </h4>
+                                    <p
+                                        class="text-gray-600 dark:text-gray-300 text-sm"
+                                    >
+                                        The extension scans web pages for
+                                        specific UI elements (like "Skip Intro"
+                                        buttons) using predefined patterns. This
+                                        happens locally in your browser.
+                                    </p>
+                                </div>
+                                <div
+                                    class="bg-gray-50 dark:bg-gray-700 p-4 rounded-xl"
+                                >
+                                    <h4 class="font-semibold text-primary mb-2">
+                                        ⚡ Automatic Action
+                                    </h4>
+                                    <p
+                                        class="text-gray-600 dark:text-gray-300 text-sm"
+                                    >
+                                        When a skip button is detected, the
+                                        extension automatically clicks it for
+                                        you. No data about this action is
+                                        recorded or transmitted.
+                                    </p>
+                                </div>
+                                <div
+                                    class="bg-gray-50 dark:bg-gray-700 p-4 rounded-xl"
+                                >
+                                    <h4 class="font-semibold text-primary mb-2">
+                                        💾 Settings Storage
+                                    </h4>
+                                    <p
+                                        class="text-gray-600 dark:text-gray-300 text-sm"
+                                    >
+                                        Your preferences are stored locally
+                                        using Chrome's storage API. This data
+                                        never leaves your device.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Local Data Storage -->
+                    <div
+                        class="section-card bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg"
+                    >
+                        <h2 class="text-2xl font-bold mb-4 flex items-center">
+                            <span class="text-2xl mr-3">💾</span>
+                            Local Data Storage
+                        </h2>
+                        <div
+                            class="prose prose-gray dark:prose-invert max-w-none"
+                        >
+                            <p
+                                class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4"
+                            >
+                                The only data stored by Intro Skipper includes:
+                            </p>
+                            <ul
+                                class="space-y-2 text-gray-600 dark:text-gray-300"
+                            >
+                                <li class="flex items-start">
+                                    <span class="text-green-500 mr-2">✓</span>
+                                    <span
+                                        ><strong>Extension Settings:</strong>
+                                        Whether the extension is
+                                        enabled/disabled</span
+                                    >
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-green-500 mr-2">✓</span>
+                                    <span
+                                        ><strong>Service Preferences:</strong>
+                                        Which streaming services you want to use
+                                        the extension on</span
+                                    >
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-green-500 mr-2">✓</span>
+                                    <span
+                                        ><strong>Skip Preferences:</strong> What
+                                        types of content to skip (intros,
+                                        credits, ads)</span
+                                    >
+                                </li>
+                            </ul>
+                            <div
+                                class="mt-6 p-4 bg-blue-50 dark:bg-blue-900/30 rounded-xl border border-blue-200 dark:border-blue-700"
+                            >
+                                <p
+                                    class="text-blue-800 dark:text-blue-200 text-sm"
+                                >
+                                    <strong>Important:</strong> This data is
+                                    stored locally on your device using Chrome's
+                                    sync storage. If you have Chrome sync
+                                    enabled, these settings may sync across your
+                                    devices through Google's servers, but we
+                                    have no access to this data.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Third-Party Services -->
+                    <div
+                        class="section-card bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg"
+                    >
+                        <h2 class="text-2xl font-bold mb-4 flex items-center">
+                            <span class="text-2xl mr-3">🔗</span>
+                            Third-Party Services
+                        </h2>
+                        <div
+                            class="prose prose-gray dark:prose-invert max-w-none"
+                        >
+                            <p
+                                class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4"
+                            >
+                                Intro Skipper does not integrate with any
+                                third-party analytics, tracking, or data
+                                collection services. We don't use:
+                            </p>
+                            <ul
+                                class="space-y-2 text-gray-600 dark:text-gray-300"
+                            >
+                                <li class="flex items-start">
+                                    <span class="text-red-500 mr-2">✗</span>
+                                    <span
+                                        >Google Analytics or similar tracking
+                                        services</span
+                                    >
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-red-500 mr-2">✗</span>
+                                    <span>Crash reporting services</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-red-500 mr-2">✗</span>
+                                    <span>Advertisement networks</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-red-500 mr-2">✗</span>
+                                    <span>External APIs or databases</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Permissions Explained -->
+                    <div
+                        class="section-card bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg"
+                    >
+                        <h2 class="text-2xl font-bold mb-4 flex items-center">
+                            <span class="text-2xl mr-3">🔐</span>
+                            Permissions Explained
+                        </h2>
+                        <div
+                            class="prose prose-gray dark:prose-invert max-w-none"
+                        >
+                            <p
+                                class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4"
+                            >
+                                When you install Intro Skipper, Chrome requests
+                                certain permissions. Here's what each permission
+                                is used for:
+                            </p>
+                            <div class="space-y-4">
+                                <div
+                                    class="border border-gray-200 dark:border-gray-600 p-4 rounded-xl"
+                                >
+                                    <h4 class="font-semibold text-primary mb-2">
+                                        Active Tab
+                                    </h4>
+                                    <p
+                                        class="text-gray-600 dark:text-gray-300 text-sm"
+                                    >
+                                        Allows the extension to interact with
+                                        the streaming website you're currently
+                                        viewing to detect and click skip
+                                        buttons.
+                                    </p>
+                                </div>
+                                <div
+                                    class="border border-gray-200 dark:border-gray-600 p-4 rounded-xl"
+                                >
+                                    <h4 class="font-semibold text-primary mb-2">
+                                        Storage
+                                    </h4>
+                                    <p
+                                        class="text-gray-600 dark:text-gray-300 text-sm"
+                                    >
+                                        Used to save your extension settings
+                                        locally on your device.
+                                    </p>
+                                </div>
+                                <div
+                                    class="border border-gray-200 dark:border-gray-600 p-4 rounded-xl"
+                                >
+                                    <h4 class="font-semibold text-primary mb-2">
+                                        Specific Website Access
+                                    </h4>
+                                    <p
+                                        class="text-gray-600 dark:text-gray-300 text-sm"
+                                    >
+                                        The extension only runs on supported
+                                        streaming platforms (Netflix,
+                                        Crunchyroll, etc.) as specified in the
+                                        manifest.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Open Source Transparency -->
+                    <div
+                        class="section-card bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg"
+                    >
+                        <h2 class="text-2xl font-bold mb-4 flex items-center">
+                            <span class="text-2xl mr-3">🔓</span>
+                            Open Source Transparency
+                        </h2>
+                        <div
+                            class="prose prose-gray dark:prose-invert max-w-none"
+                        >
+                            <p
+                                class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4"
+                            >
+                                Intro Skipper is completely open source. This
+                                means:
+                            </p>
+                            <ul
+                                class="space-y-2 text-gray-600 dark:text-gray-300"
+                            >
+                                <li class="flex items-start">
+                                    <span class="text-green-500 mr-2">✓</span>
+                                    <span
+                                        >You can view our complete source code
+                                        on GitHub</span
+                                    >
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-green-500 mr-2">✓</span>
+                                    <span
+                                        >Security researchers can audit our code
+                                        for privacy compliance</span
+                                    >
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-green-500 mr-2">✓</span>
+                                    <span
+                                        >You can verify that we don't collect
+                                        any data by reading the code
+                                        yourself</span
+                                    >
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-green-500 mr-2">✓</span>
+                                    <span
+                                        >The community can contribute
+                                        improvements and security fixes</span
+                                    >
+                                </li>
+                            </ul>
+                            <div class="mt-6">
+                                <a
+                                    href="https://github.com/dsouravcom/intro-skipper-ext"
+                                    target="_blank"
+                                    class="inline-flex items-center space-x-2 bg-primary hover:bg-orange-500 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300"
+                                >
+                                    <svg
+                                        class="w-5 h-5"
+                                        fill="currentColor"
+                                        viewBox="0 0 20 20"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"
+                                            clip-rule="evenodd"
+                                        />
+                                    </svg>
+                                    <span>View Source Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Changes to Privacy Policy -->
+                    <div
+                        class="section-card bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg"
+                    >
+                        <h2 class="text-2xl font-bold mb-4 flex items-center">
+                            <span class="text-2xl mr-3">📝</span>
+                            Changes to This Privacy Policy
+                        </h2>
+                        <div
+                            class="prose prose-gray dark:prose-invert max-w-none"
+                        >
+                            <p
+                                class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4"
+                            >
+                                We may update this Privacy Policy from time to
+                                time to reflect changes in our practices or for
+                                legal reasons. When we make changes:
+                            </p>
+                            <ul
+                                class="space-y-2 text-gray-600 dark:text-gray-300"
+                            >
+                                <li class="flex items-start">
+                                    <span class="text-primary mr-2">•</span>
+                                    <span
+                                        >We'll update the "Last updated" date at
+                                        the top of this policy</span
+                                    >
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-primary mr-2">•</span>
+                                    <span
+                                        >Significant changes will be announced
+                                        on our GitHub repository</span
+                                    >
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-primary mr-2">•</span>
+                                    <span
+                                        >We'll maintain our commitment to not
+                                        collecting personal data</span
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div
+                        class="section-card bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg"
+                    >
+                        <h2 class="text-2xl font-bold mb-4 flex items-center">
+                            <span class="text-2xl mr-3">📧</span>
+                            Questions About Privacy?
+                        </h2>
+                        <div
+                            class="prose prose-gray dark:prose-invert max-w-none"
+                        >
+                            <p
+                                class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6"
+                            >
+                                If you have any questions about this Privacy
+                                Policy or our privacy practices, we're here to
+                                help:
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <a
+                                    href="contact.html"
+                                    class="inline-flex items-center justify-center space-x-2 bg-primary hover:bg-orange-500 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300"
+                                >
+                                    <span>📧</span>
+                                    <span>Contact Us</span>
+                                </a>
+                                <a
+                                    href="https://github.com/dsouravcom/intro-skipper-ext/issues"
+                                    target="_blank"
+                                    class="inline-flex items-center justify-center space-x-2 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-900 dark:text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300"
+                                >
+                                    <span>🐛</span>
+                                    <span>GitHub Issues</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer
+            class="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 py-12 px-4 sm:px-6 lg:px-8"
+        >
+            <div class="max-w-6xl mx-auto">
+                <div
+                    class="flex flex-col md:flex-row justify-between items-center"
+                >
+                    <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                        <img
+                            src="assets/icons/logo.png"
+                            alt="intro skipper logo"
+                            class="w-8 h-8"
+                        />
+                        <span class="text-xl font-bold text-primary"
+                            >Intro Skipper</span
+                        >
+                    </div>
+
+                    <div class="flex space-x-6">
+                        <a
+                            href="index.html"
+                            class="text-gray-500 hover:text-primary transition-colors"
+                        >
+                            Home
+                        </a>
+                        <a
+                            href="contact.html"
+                            class="text-gray-500 hover:text-primary transition-colors"
+                        >
+                            Contact
+                        </a>
+                        <a
+                            href="https://github.com/dsouravcom/intro-skipper-ext"
+                            target="_blank"
+                            class="text-gray-500 hover:text-primary transition-colors"
+                        >
+                            <svg
+                                class="w-6 h-6"
+                                fill="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div
+                    class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700 text-center text-gray-500 dark:text-gray-400"
+                >
+                    <p>
+                        &copy; <span id="year"></span> Intro Skipper. Made by
+                        <a
+                            href="https://dsourav.com"
+                            class="hover:text-primary transition-colors"
+                            >Sourav</a
+                        >
+                        with ❤️ for streamers everywhere.
+                    </p>
+                    <p class="mt-2 text-sm">
+                        Privacy-focused • Open Source • Free Forever
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script>
+            // Set current year in footer
+            document.addEventListener("DOMContentLoaded", function () {
+                document.getElementById("year").textContent =
+                    new Date().getFullYear();
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+                anchor.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(
+                        this.getAttribute("href")
+                    );
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start",
+                        });
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
