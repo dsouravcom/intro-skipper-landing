@@ -90,7 +90,7 @@ For issues or questions:
 
 -   Open an issue on GitHub
 -   Contact via the website's contact form
--   Email: [Your contact email]
+-   Email: [sourav@dsourav.com](mailto:sourav@dsourav.com)
 
 ---
 
