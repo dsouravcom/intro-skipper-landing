@@ -1,0 +1,11 @@
+# Netlify redirects file
+# This file handles 404 errors and redirects for Netlify hosting
+
+# Redirect all 404 errors to our custom 404 page
+/*    /404.html   404
+
+# Optional: Force HTTPS (uncomment if needed)
+# http://introskipper.dsourav.com/*    https://introskipper.dsourav.com/:splat    301!
+
+# Optional: Handle common file extensions that might be missing
+/*.html    /:splat    200

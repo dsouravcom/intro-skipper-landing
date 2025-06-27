@@ -69,7 +69,6 @@
         <meta name="msapplication-TileColor" content="#ff6b35" />
         <meta name="application-name" content="Intro Skipper" />
         <meta name="apple-mobile-web-app-title" content="Intro Skipper" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
 
         <!-- Canonical URL -->
@@ -198,7 +197,7 @@
                             >Intro Skipper</span
                         >
                     </div>
-                    <nav class="hidden md:flex space-x-8">
+                    <nav class="hidden md:flex space-x-8 items-center">
                         <a
                             href="#features"
                             class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
@@ -224,6 +223,27 @@
                             class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
                             >Privacy</a
                         >
+
+                        <!-- GitHub Stars Button -->
+                        <a
+                            href="https://github.com/dsouravcom/intro-skipper-ext"
+                            target="_blank"
+                            class="bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-900 dark:text-white px-3 py-2 rounded-lg font-medium text-sm transition-all duration-300 flex items-center space-x-2 border border-gray-300 dark:border-gray-600"
+                            id="githubStarsBtn"
+                        >
+                            <svg
+                                class="w-4 h-4"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"
+                                    clip-rule="evenodd"
+                                />
+                            </svg>
+                            <span id="starCount">⭐ Stars</span>
+                        </a>
                     </nav>
                 </div>
             </div>
@@ -232,12 +252,7 @@
         <!-- Hero Section -->
         <section class="hero-gradient pt-24 pb-16 px-4 sm:px-6 lg:px-8">
             <div class="max-w-4xl mx-auto text-center">
-                <div class="mb-8">
-                    <img
-                        src="assets/icons/logo.png"
-                        alt="Intro Skipper Logo"
-                        class="w-16 h-16 mx-auto mb-4"
-                    />
+                <div class="my-8">
                     <h1
                         class="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-orange-500 bg-clip-text text-transparent"
                     >
@@ -255,42 +270,85 @@
                 </div>
 
                 <div
-                    class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
+                    class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-4"
                 >
+                    <!-- ========== HERO SECTION: PRIMARY DOWNLOAD BUTTON (DYNAMIC) ========== -->
+                    <!-- This button will dynamically update based on detected browser:
+                         - href: Updates to browser-specific extension store URL
+                         - Browser icon: Updates to Chrome/Firefox/Edge SVG
+                         - Alt text: Updates to "[Browser] icon"
+                         - Button text: Updates to browser-specific text -->
                     <a
-                        href="#download"
-                        class="download-btn bg-primary hover:bg-orange-500 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 flex items-center space-x-2 shadow-lg"
+                        href="https://chrome.google.com/webstore/category/extensions"
+                        id="primaryDownloadBtn"
+                        class="download-btn bg-primary hover:bg-orange-500 text-white px-4 py-3 rounded-2xl font-bold text-xl transition-all duration-300 flex items-center space-x-2 shadow-xl"
                     >
-                        <svg
-                            class="w-5 h-5"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
+                        <!-- DYNAMIC ELEMENT: Browser icon changes based on detected browser -->
+                        <img
+                            src="assets/icons/Chrome.svg"
+                            alt="Chrome Icon"
+                            class="w-10 h-10"
+                            id="primaryBrowserIcon"
+                        />
+                        <!-- DYNAMIC ELEMENT: Button text changes based on detected browser -->
+                        <span id="primaryBtnText" class="mb-1"
+                            >Get started (it's free)</span
                         >
-                            <path
-                                d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM6.293 6.707a1 1 0 010-1.414l3-3a1 1 0 011.414 0l3 3a1 1 0 01-1.414 1.414L11 5.414V13a1 1 0 11-2 0V5.414L7.707 6.707a1 1 0 01-1.414 0z"
-                            />
-                        </svg>
-                        <span>Install for Chrome</span>
                     </a>
+                </div>
 
-                    <a
-                        href="https://github.com/dsouravcom/intro-skipper-ext"
-                        target="_blank"
-                        class="bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-900 dark:text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 flex items-center space-x-2"
+                <!-- ========== HERO SECTION: ALSO AVAILABLE ON (DYNAMIC) ========== -->
+                <!-- This section will hide the current browser and show only other two browsers -->
+                <div class="flex justify-center items-center mb-4">
+                    <span class="mr-2 text-gray-600 dark:text-gray-300"
+                        >Also available on:</span
                     >
-                        <svg
-                            class="w-5 h-5"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
+                    <div id="otherBrowsers" class="flex items-center space-x-1">
+                        <!-- DYNAMIC ELEMENT: Chrome link - Hidden if user is on Chrome -->
+                        <a
+                            href="https://chrome.google.com/webstore/category/extensions"
+                            target="_blank"
+                            id="chromeLink"
+                            class="hover:scale-110 transition-transform duration-200"
+                            title="Download for Chrome"
                         >
-                            <path
-                                fill-rule="evenodd"
-                                d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"
-                                clip-rule="evenodd"
+                            <img
+                                src="assets/icons/Chrome.svg"
+                                alt="Chrome icon"
+                                class="w-6 h-6"
                             />
-                        </svg>
-                        <span>View on GitHub</span>
-                    </a>
+                        </a>
+
+                        <!-- DYNAMIC ELEMENT: Firefox link - Hidden if user is on Firefox -->
+                        <a
+                            href="https://addons.mozilla.org/en-US/firefox/addon/universal-intro-skipper/"
+                            target="_blank"
+                            id="firefoxLink"
+                            class="hover:scale-110 transition-transform duration-200"
+                            title="Download for Firefox"
+                        >
+                            <img
+                                src="assets/icons/Firefox.svg"
+                                alt="Firefox icon"
+                                class="w-10 h-10"
+                            />
+                        </a>
+
+                        <!-- DYNAMIC ELEMENT: Edge link - Hidden if user is on Edge -->
+                        <a
+                            href="https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home"
+                            target="_blank"
+                            id="edgeLink"
+                            class="hover:scale-110 transition-transform duration-200"
+                            title="Download for Edge"
+                        >
+                            <img
+                                src="assets/icons/Edge.svg"
+                                alt="Edge icon"
+                                class="w-7 h-7"
+                            />
+                        </a>
+                    </div>
                 </div>
 
                 <div
@@ -424,34 +482,37 @@
                 </div>
 
                 <div
-                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center max-w-4xl mx-auto"
+                    class="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto"
                 >
                     <div
-                        class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md text-center transition-all duration-300 hover:shadow-lg w-full max-w-[200px]"
+                        class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md text-center transition-all duration-300 hover:shadow-lg flex-shrink-0 w-full max-w-[280px] sm:w-[200px]"
                     >
                         <img
                             src="https://www.netflix.com/favicon.ico"
                             alt="Netflix"
-                            class="w-12 h-12 mx-auto mb-2"
+                            class="w-12 h-12 mx-auto mb-3"
                         />
-                        <div class="font-semibold">Netflix</div>
+                        <div class="font-semibold text-lg">Netflix</div>
                     </div>
 
                     <div
-                        class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md text-center transition-all duration-300 hover:shadow-lg w-full max-w-[200px]"
+                        class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md text-center transition-all duration-300 hover:shadow-lg flex-shrink-0 w-full max-w-[280px] sm:w-[200px]"
                     >
                         <img
                             src="https://cdn.iconscout.com/icon/free/png-256/free-crunchyroll-logo-icon-download-in-svg-png-gif-file-formats--social-network-media-pack-logos-icons-3357695.png?f=webp"
                             alt="crunchyroll logo"
-                            class="w-12 h-12 mx-auto mb-2"
+                            class="w-12 h-12 mx-auto mb-3"
                         />
-                        <div class="font-semibold">Crunchyroll</div>
+                        <div class="font-semibold text-lg">Crunchyroll</div>
                     </div>
+
                     <div
-                        class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md text-center transition-all duration-300 hover:shadow-lg w-full max-w-[200px] sm:col-span-2 lg:col-span-1"
+                        class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md text-center transition-all duration-300 hover:shadow-lg flex-shrink-0 w-full max-w-[280px] sm:w-[200px]"
                     >
-                        <div class="text-2xl mb-2">🔄</div>
-                        <div class="font-semibold">More comming soon</div>
+                        <div class="text-3xl mb-3">🔄</div>
+                        <div class="font-semibold text-lg">
+                            More coming soon
+                        </div>
                     </div>
                 </div>
             </div>
@@ -474,43 +535,87 @@
                 </div>
 
                 <div
-                    class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12"
+                    class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8"
                 >
+                    <!-- ========== DOWNLOAD SECTION: MAIN DOWNLOAD BUTTON (DYNAMIC) ========== -->
+                    <!-- This button will dynamically update based on detected browser:
+                         - href: Updates to browser-specific extension store URL
+                         - Browser icon: Updates to Chrome/Firefox/Edge SVG
+                         - Alt text: Updates to "[Browser] icon"
+                         - Button text: Updates to browser-specific text -->
                     <a
                         href="https://chrome.google.com/webstore/category/extensions"
+                        id="mainDownloadBtn"
                         target="_blank"
-                        class="download-btn bg-primary hover:bg-orange-500 text-white px-10 py-5 rounded-2xl font-bold text-xl transition-all duration-300 flex items-center space-x-3 shadow-xl"
+                        class="download-btn bg-primary hover:bg-orange-500 text-white px-4 py-3 rounded-2xl font-bold text-2xl transition-all duration-300 flex items-center space-x-2 shadow-2xl"
                     >
-                        <svg
-                            class="w-6 h-6"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                        >
-                            <path
-                                d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM6.293 6.707a1 1 0 010-1.414l3-3a1 1 0 011.414 0l3 3a1 1 0 01-1.414 1.414L11 5.414V13a1 1 0 11-2 0V5.414L7.707 6.707a1 1 0 01-1.414 0z"
-                            />
-                        </svg>
-                        <span>Add to Chrome - FREE</span>
+                        <!-- DYNAMIC ELEMENT: Browser icon changes based on detected browser -->
+                        <img
+                            src="assets/icons/Chrome.svg"
+                            alt="Chrome Icon"
+                            class="w-10 h-10"
+                            id="mainBrowserIcon"
+                        />
+                        <!-- DYNAMIC ELEMENT: Button text changes based on detected browser -->
+                        <span id="mainBtnText">Get started (it's free)</span>
                     </a>
+                </div>
 
-                    <a
-                        href="https://github.com/dsouravcom/intro-skipper-ext"
-                        target="_blank"
-                        class="bg-white dark:bg-gray-900 border-2 border-gray-300 dark:border-gray-600 hover:border-primary dark:hover:border-primary text-gray-900 dark:text-white px-10 py-5 rounded-2xl font-bold text-xl transition-all duration-300 flex items-center space-x-3"
+                <!-- ========== DOWNLOAD SECTION: ALSO AVAILABLE ON (DYNAMIC) ========== -->
+                <!-- This section will hide the current browser and show only other two browsers -->
+                <div class="flex justify-center items-center mb-4">
+                    <span class="text-gray-600 dark:text-gray-300"
+                        >Also available on:</span
                     >
-                        <svg
-                            class="w-6 h-6"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
+                    <div
+                        id="downloadOtherBrowsers"
+                        class="flex items-center space-x-1 ml-2"
+                    >
+                        <!-- DYNAMIC ELEMENT: Chrome link - Hidden if user is on Chrome -->
+                        <a
+                            href="https://chrome.google.com/webstore/category/extensions"
+                            target="_blank"
+                            id="downloadChromeLink"
+                            class="hover:scale-110 transition-transform duration-200"
+                            title="Download for Chrome"
                         >
-                            <path
-                                fill-rule="evenodd"
-                                d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"
-                                clip-rule="evenodd"
+                            <img
+                                src="assets/icons/Chrome.svg"
+                                alt="Chrome icon"
+                                class="w-6 h-6"
                             />
-                        </svg>
-                        <span>View Source Code</span>
-                    </a>
+                        </a>
+
+                        <!-- DYNAMIC ELEMENT: Firefox link - Hidden if user is on Firefox -->
+                        <a
+                            href="https://addons.mozilla.org/en-US/firefox/addon/universal-intro-skipper/"
+                            target="_blank"
+                            id="downloadFirefoxLink"
+                            class="hover:scale-110 transition-transform duration-200"
+                            title="Download for Firefox"
+                        >
+                            <img
+                                src="assets/icons/Firefox.svg"
+                                alt="Firefox icon"
+                                class="w-10 h-10"
+                            />
+                        </a>
+
+                        <!-- DYNAMIC ELEMENT: Edge link - Hidden if user is on Edge -->
+                        <a
+                            href="https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home"
+                            target="_blank"
+                            id="downloadEdgeLink"
+                            class="hover:scale-110 transition-transform duration-200"
+                            title="Download for Edge"
+                        >
+                            <img
+                                src="assets/icons/Edge.svg"
+                                alt="Edge icon"
+                                class="w-7 h-7"
+                            />
+                        </a>
+                    </div>
                 </div>
 
                 <div class="text-center">
@@ -525,7 +630,8 @@
                                 class="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center font-bold"
                                 >1</span
                             >
-                            <span>Click "Add to Chrome"</span>
+                            <!-- DYNAMIC ELEMENT: Step text changes based on detected browser -->
+                            <span id="stepOneText">Click "Add to Browser"</span>
                         </div>
                         <div class="hidden sm:block">→</div>
                         <div class="flex items-center space-x-2">
@@ -579,21 +685,6 @@
                         >
                             Privacy
                         </a>
-                        <a
-                            href="https://github.com/dsouravcom/intro-skipper-ext"
-                            target="_blank"
-                            class="text-gray-500 hover:text-primary transition-colors"
-                        >
-                            <svg
-                                class="w-6 h-6"
-                                fill="currentColor"
-                                viewBox="0 0 24 24"
-                            >
-                                <path
-                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                                />
-                            </svg>
-                        </a>
                     </div>
                 </div>
 
@@ -612,14 +703,184 @@
             </div>
         </footer>
 
-        <!-- Smooth scrolling script -->
+        <!-- ========== DYNAMIC BROWSER DETECTION AND CONFIGURATION SCRIPT ========== -->
         <script>
-            // Set current year in footer
+            // ========== BROWSER DETECTION FUNCTION ==========
+            // Detects user's browser based on user agent string
+            // Returns: 'chrome', 'firefox', 'edge', or 'chrome' (default)
+            function detectBrowser() {
+                const userAgent = navigator.userAgent.toLowerCase();
+
+                if (userAgent.includes("edg/")) {
+                    return "edge";
+                } else if (userAgent.includes("firefox")) {
+                    return "firefox";
+                } else if (
+                    userAgent.includes("chrome") &&
+                    !userAgent.includes("edg/")
+                ) {
+                    return "chrome";
+                } else {
+                    return "chrome"; // Default to Chrome for unknown browsers
+                }
+            }
+
+            // ========== MAIN CONFIGURATION FUNCTION ==========
+            // This function updates all dynamic elements based on detected browser
+            function configureBrowserButtons() {
+                const browser = detectBrowser();
+
+                // ========== BROWSER-SPECIFIC CONFIGURATIONS ==========
+                // Each browser has its own URL, text, logo, and alt text
+                const browserConfigs = {
+                    chrome: {
+                        name: "Chrome",
+                        url: "https://chrome.google.com/webstore/category/extensions",
+                        heroText: "Get started (it's free)",
+                        downloadText: "Get started (it's free)",
+                        logo: "assets/icons/Chrome.svg",
+                        altText: "Chrome icon",
+                    },
+                    firefox: {
+                        name: "Firefox",
+                        url: "https://addons.mozilla.org/en-US/firefox/addon/universal-intro-skipper/",
+                        heroText: "Get started (it's free)",
+                        downloadText: "Get started (it's free)",
+                        logo: "assets/icons/Firefox.svg",
+                        altText: "Firefox icon",
+                    },
+                    edge: {
+                        name: "Edge",
+                        url: "https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home",
+                        heroText: "Get started (it's free)",
+                        downloadText: "Get started (it's free)",
+                        logo: "assets/icons/Edge.svg",
+                        altText: "Edge icon",
+                    },
+                };
+
+                const config = browserConfigs[browser];
+
+                // ========== UPDATE HERO SECTION PRIMARY DOWNLOAD BUTTON ==========
+                // Updates: href, button text, browser icon, alt text
+                const primaryBtn =
+                    document.getElementById("primaryDownloadBtn");
+                const primaryBtnText =
+                    document.getElementById("primaryBtnText");
+                const primaryBrowserIcon =
+                    document.getElementById("primaryBrowserIcon");
+                if (primaryBtn && primaryBtnText && primaryBrowserIcon) {
+                    primaryBtn.href = config.url; // Update link URL
+                    primaryBtnText.textContent = config.heroText; // Update button text
+                    primaryBrowserIcon.src = config.logo; // Update browser icon
+                    primaryBrowserIcon.alt = config.altText; // Update alt text
+                }
+
+                // ========== UPDATE DOWNLOAD SECTION MAIN DOWNLOAD BUTTON ==========
+                // Updates: href, button text, browser icon, alt text
+                const mainBtn = document.getElementById("mainDownloadBtn");
+                const mainBtnText = document.getElementById("mainBtnText");
+                const mainBrowserIcon =
+                    document.getElementById("mainBrowserIcon");
+                if (mainBtn && mainBtnText && mainBrowserIcon) {
+                    mainBtn.href = config.url; // Update link URL
+                    mainBtnText.textContent = config.downloadText; // Update button text
+                    mainBrowserIcon.src = config.logo; // Update browser icon
+                    mainBrowserIcon.alt = config.altText; // Update alt text
+                }
+
+                // ========== UPDATE INSTALLATION STEP TEXT ==========
+                // Updates the first step to show browser-specific text: "Add to [Browser]"
+                const stepOneText = document.getElementById("stepOneText");
+                if (stepOneText) {
+                    stepOneText.textContent = `Click "Add to ${config.name}"`;
+                }
+
+                // ========== HIDE CURRENT BROWSER FROM "ALSO AVAILABLE ON" SECTIONS ==========
+                hideCurrentBrowserFromList(browser);
+            }
+
+            // ========== FUNCTION TO HIDE CURRENT BROWSER FROM ALTERNATIVE LISTS ==========
+            // Hides the current browser from both hero and download "also available on" sections
+            function hideCurrentBrowserFromList(currentBrowser) {
+                // ========== HIDE FROM HERO SECTION ==========
+                // Finds and hides the current browser link in hero section
+                // Element IDs: chromeLink, firefoxLink, edgeLink
+                const heroCurrentBrowserLink = document.getElementById(
+                    currentBrowser + "Link"
+                );
+                if (heroCurrentBrowserLink) {
+                    heroCurrentBrowserLink.style.display = "none";
+                }
+
+                // ========== HIDE FROM DOWNLOAD SECTION ==========
+                // Finds and hides the current browser link in download section
+                // Element IDs: downloadChromeLink, downloadFirefoxLink, downloadEdgeLink
+                const downloadCurrentBrowserLink = document.getElementById(
+                    "download" +
+                        currentBrowser.charAt(0).toUpperCase() +
+                        currentBrowser.slice(1) +
+                        "Link"
+                );
+                if (downloadCurrentBrowserLink) {
+                    downloadCurrentBrowserLink.style.display = "none";
+                }
+
+                // ========== ADJUST SPACING WHEN BROWSER IS HIDDEN ==========
+                // Adds center justification to both browser lists when an item is hidden
+                const otherBrowsersDiv =
+                    document.getElementById("otherBrowsers");
+                const downloadOtherBrowsersDiv = document.getElementById(
+                    "downloadOtherBrowsers"
+                );
+
+                if (otherBrowsersDiv) {
+                    otherBrowsersDiv.classList.add("justify-center");
+                }
+                if (downloadOtherBrowsersDiv) {
+                    downloadOtherBrowsersDiv.classList.add("justify-center");
+                }
+            }
+
+            // ========== GITHUB STARS FETCHER ==========
+            // Fetches and displays the current star count from GitHub API
+            async function fetchGitHubStars() {
+                try {
+                    const response = await fetch(
+                        "https://api.github.com/repos/dsouravcom/intro-skipper-ext"
+                    );
+                    const data = await response.json();
+                    const starCount = data.stargazers_count;
+
+                    const starCountElement =
+                        document.getElementById("starCount");
+                    if (starCountElement) {
+                        starCountElement.textContent = `⭐ ${starCount}`;
+                    }
+                } catch (error) {
+                    console.log("Could not fetch GitHub stars:", error);
+                    // Keep default text if API fails
+                }
+            }
+
+            // ========== INITIALIZE DYNAMIC FUNCTIONALITY ==========
+            // Runs when the page loads to set up all dynamic elements
             document.addEventListener("DOMContentLoaded", function () {
+                // Set current year in footer
                 document.getElementById("year").textContent =
                     new Date().getFullYear();
+
+                // ========== TRIGGER BROWSER-SPECIFIC CONFIGURATION ==========
+                // This is the main call that updates all dynamic elements
+                configureBrowserButtons();
+
+                // ========== FETCH GITHUB STARS ==========
+                // Fetch and display GitHub stars count
+                fetchGitHubStars();
             });
-            // Smooth scrolling for anchor links
+
+            // ========== SMOOTH SCROLLING FOR ANCHOR LINKS ==========
+            // Enables smooth scrolling when clicking navigation links
             document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
                 anchor.addEventListener("click", function (e) {
                     e.preventDefault();
@@ -635,7 +896,8 @@
                 });
             });
 
-            // Add active navigation highlighting
+            // ========== ACTIVE NAVIGATION HIGHLIGHTING ==========
+            // Highlights the current section in the navigation menu while scrolling
             window.addEventListener("scroll", () => {
                 const sections = document.querySelectorAll("section[id]");
                 const navLinks = document.querySelectorAll('nav a[href^="#"]');
