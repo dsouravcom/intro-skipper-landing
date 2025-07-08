@@ -9,7 +9,7 @@
         </title>
         <meta
             name="description"
-            content="A powerful browser extension that intelligently detects and skips intro sequences across multiple streaming services with zero configuration required."
+            content="Download the Intro Skipper extension for Chrome and Firefox - the ultimate Netflix intro skipper extension and Crunchyroll intro skipper that automatically detects and skips intro sequences across streaming platforms. Get the Chrome intro skipper extension download for free, with full source code available on the intro skipper extension GitHub repository."
         />
 
         <!-- SEO Meta Tags -->
@@ -267,6 +267,12 @@
                             >One extension, endless entertainment.</span
                         >
                     </p>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 mt-4">
+                        Whether you're looking for a Netflix intro skipper
+                        extension or a Crunchyroll intro skipper, our
+                        <strong>Intro Skipper extension</strong> has you covered
+                        on both Chrome and Firefox.
+                    </p>
                 </div>
 
                 <div
@@ -292,7 +298,7 @@
                         />
                         <!-- DYNAMIC ELEMENT: Button text changes based on detected browser -->
                         <span id="primaryBtnText" class="mb-1"
-                            >Get started (it's free)</span
+                            >Chrome Intro Skipper Extension Download</span
                         >
                     </a>
                 </div>
@@ -557,9 +563,21 @@
                             id="mainBrowserIcon"
                         />
                         <!-- DYNAMIC ELEMENT: Button text changes based on detected browser -->
-                        <span id="mainBtnText">Get started (it's free)</span>
+                        <span id="mainBtnText"
+                            >Chrome Intro Skipper Extension Download</span
+                        >
                     </a>
                 </div>
+
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-4">
+                    You can also check out the open-source
+                    <a
+                        href="https://github.com/dsouravcom/intro-skipper-ext"
+                        target="_blank"
+                        class="underline text-primary"
+                        >Intro Skipper extension on GitHub</a
+                    >.
+                </p>
 
                 <!-- ========== DOWNLOAD SECTION: ALSO AVAILABLE ON (DYNAMIC) ========== -->
                 <!-- This section will hide the current browser and show only other two browsers -->
@@ -703,6 +721,20 @@
             </div>
         </footer>
 
+        <script type="text/javascript">
+            (function () {
+                var sbSiteSecret = "9f90fd4b-f95d-4eca-b939-7deba3d119b7";
+                window.sitebehaviourTrackingSecret = sbSiteSecret;
+                var scriptElement = document.createElement("script");
+                scriptElement.defer = true;
+                scriptElement.id = "site-behaviour-script-v2";
+                scriptElement.src =
+                    "https://sitebehaviour-cdn.fra1.cdn.digitaloceanspaces.com/index.min.js?sitebehaviour-secret=" +
+                    sbSiteSecret;
+                document.head.appendChild(scriptElement);
+            })();
+        </script>
+
         <!-- ========== DYNAMIC BROWSER DETECTION AND CONFIGURATION SCRIPT ========== -->
         <script>
             // ========== BROWSER DETECTION FUNCTION ==========
@@ -736,24 +768,25 @@
                     chrome: {
                         name: "Chrome",
                         url: "https://chromewebstore.google.com/detail/cdmmdficgnfnennlmjieepedoamgppgk",
-                        heroText: "Get started (it's free)",
-                        downloadText: "Get started (it's free)",
+                        heroText: "Chrome Intro Skipper Extension Download",
+                        downloadText: "Chrome Intro Skipper Extension Download",
                         logo: "assets/icons/Chrome.svg",
                         altText: "Chrome icon",
                     },
                     firefox: {
                         name: "Firefox",
                         url: "https://addons.mozilla.org/en-US/firefox/addon/universal-intro-skipper/",
-                        heroText: "Get started (it's free)",
-                        downloadText: "Get started (it's free)",
+                        heroText: "Firefox Intro Skipper Extension Download",
+                        downloadText:
+                            "Firefox Intro Skipper Extension Download",
                         logo: "assets/icons/Firefox.svg",
                         altText: "Firefox icon",
                     },
                     edge: {
                         name: "Edge",
                         url: "https://chromewebstore.google.com/detail/cdmmdficgnfnennlmjieepedoamgppgk",
-                        heroText: "Get started (it's free)",
-                        downloadText: "Get started (it's free)",
+                        heroText: "Edge Intro Skipper Extension Download",
+                        downloadText: "Edge Intro Skipper Extension Download",
                         logo: "assets/icons/Edge.svg",
                         altText: "Edge icon",
                     },
