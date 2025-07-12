@@ -785,11 +785,6 @@
                     sbSiteSecret;
                 document.head.appendChild(scriptElement);
             }
-
-            // Load after initial page load to prevent blocking
-            window.addEventListener("load", function () {
-                setTimeout(loadSiteBehaviorTracking, 1000);
-            });
         </script>
 
         <!-- ========== DYNAMIC BROWSER DETECTION AND CONFIGURATION SCRIPT ========== -->
