@@ -1,368 +1,85 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>404 - Page Not Found | Intro Skipper</title>
-        <meta
-            name="description"
-            content="The page you're looking for doesn't exist. Return to Intro Skipper homepage to download the browser extension."
-        />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 - Page Not Found | Intro Skipper</title>
+    <meta name="description" content="The page you're looking for doesn't exist." />
+    <meta name="robots" content="noindex, follow" />
+    <meta name="author" content="Sourav" />
+    
+    <!-- Open Graph / Twitter Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="404 - Page Not Found | Intro Skipper" />
+    <meta property="og:description" content="The page you're looking for doesn't exist." />
+    <meta property="og:url" content="https://introskipper.dsourav.com/404" />
+    <meta property="og:image" content="https://res.cloudinary.com/dzjujoqyi/image/upload/v1751029465/intro-skipper/meta.png" />
+    
+    <link rel="icon" type="image/png" href="assets/icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/site.webmanifest" />
 
-        <!-- SEO Meta Tags -->
-        <meta name="robots" content="noindex, follow" />
-        <meta name="author" content="Sourav" />
-
-        <!-- Open Graph Meta Tags -->
-        <meta property="og:type" content="website" />
-        <meta
-            property="og:title"
-            content="404 - Page Not Found | Intro Skipper"
-        />
-        <meta
-            property="og:description"
-            content="The page you're looking for doesn't exist. Return to Intro Skipper homepage."
-        />
-        <meta
-            property="og:url"
-            content="https://introskipper.dsourav.com/404"
-        />
-        <meta property="og:site_name" content="Intro Skipper" />
-        <meta
-            property="og:image"
-            content="https://res.cloudinary.com/dzjujoqyi/image/upload/v1751029465/intro-skipper/meta.png"
-        />
-
-        <!-- Favicons -->
-        <link
-            rel="icon"
-            type="image/png"
-            href="assets/icons/favicon-96x96.png"
-            sizes="96x96"
-        />
-        <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
-        <link rel="shortcut icon" href="favicon.ico" />
-        <link
-            rel="apple-touch-icon"
-            sizes="180x180"
-            href="assets/icons/apple-touch-icon.png"
-        />
-        <link rel="manifest" href="assets/site.webmanifest" />
-
-        <!-- Tailwind CSS -->
-        <script src="https://cdn.tailwindcss.com"></script>
-
-        <!-- Custom Tailwind Config -->
-        <script>
-            tailwind.config = {
-                darkMode: "media",
-                theme: {
-                    extend: {
-                        colors: {
-                            primary: "#ff6b35",
-                            secondary: "#1a1a1a",
-                        },
+    <!-- Styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    
+    <script>
+        tailwind.config = {
+            darkMode: "media",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#475569", // Slate 600
+                        secondary: "#1E293B", // Slate 800
+                        accent: "#94A3B8", // Slate 400
+                        background: "#F8FAFC", // Slate 50
+                        surface: "#FFFFFF",
                     },
-                },
-            };
-        </script>
-
-        <style>
-            @media (prefers-color-scheme: dark) {
-                .hero-gradient {
-                    background: linear-gradient(
-                        135deg,
-                        #0f0f0f 0%,
-                        #1a1a1a 100%
-                    );
-                }
-            }
-
-            @media (prefers-color-scheme: light) {
-                .hero-gradient {
-                    background: linear-gradient(
-                        135deg,
-                        #f8fafc 0%,
-                        #e2e8f0 100%
-                    );
-                }
-            }
-
-            .float-animation {
-                animation: float 3s ease-in-out infinite;
-            }
-
-            @keyframes float {
-                0%,
-                100% {
-                    transform: translateY(0px);
-                }
-                50% {
-                    transform: translateY(-10px);
-                }
-            }
-        </style>
-    </head>
-
-    <body
-        class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300"
-    >
-        <!-- Header -->
-        <header
-            class="fixed top-0 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700 z-50"
-        >
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex justify-between items-center h-16">
-                    <div class="flex items-center space-x-2">
-                        <img
-                            src="assets/icons/logo.png"
-                            alt="intro skipper logo"
-                            class="w-8 h-8"
-                        />
-                        <span class="text-xl font-bold text-primary"
-                            >Intro Skipper</span
-                        >
-                    </div>
-                    <nav class="hidden md:flex space-x-8 items-center">
-                        <a
-                            href="index.html#features"
-                            class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
-                            >Features</a
-                        >
-                        <a
-                            href="index.html#services"
-                            class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
-                            >Services</a
-                        >
-                        <a
-                            href="index.html#download"
-                            class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
-                            >Download</a
-                        >
-                        <a
-                            href="contact.html"
-                            class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
-                            >Contact</a
-                        >
-                        <a
-                            href="privacy.html"
-                            class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
-                            >Privacy</a
-                        >
-
-                        <!-- GitHub Stars Button -->
-                        <a
-                            href="https://github.com/dsouravcom/intro-skipper-ext"
-                            target="_blank"
-                            class="bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-900 dark:text-white px-3 py-2 rounded-lg font-medium text-sm transition-all duration-300 flex items-center space-x-2 border border-gray-300 dark:border-gray-600"
-                            id="githubStarsBtn"
-                        >
-                            <svg
-                                class="w-4 h-4"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                            >
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"
-                                    clip-rule="evenodd"
-                                />
-                            </svg>
-                            <span id="starCount">⭐ Stars</span>
-                        </a>
-                    </nav>
-                </div>
-            </div>
-        </header>
-
-        <!-- 404 Section -->
-        <section
-            class="hero-gradient min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20"
-        >
-            <div class="max-w-3xl mx-auto text-center">
-                <div class="my-8">
-                    <h1
-                        class="text-8xl md:text-9xl font-bold mb-4 text-primary"
-                    >
-                        404
-                    </h1>
-
-                    <h2
-                        class="text-3xl md:text-4xl font-bold mb-6 text-gray-800 dark:text-gray-200"
-                    >
-                        Oops! Page Not Found
-                    </h2>
-
-                    <p
-                        class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto"
-                    >
-                        Looks like this page got skipped too! 🎬 The page you're
-                        looking for doesn't exist or has been moved.
-                    </p>
-
-                    <!-- Action Buttons -->
-                    <div
-                        class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8"
-                    >
-                        <a
-                            href="index.html"
-                            class="bg-primary hover:bg-orange-500 text-white px-8 py-4 rounded-2xl font-bold text-lg transition-all duration-300 flex items-center space-x-2 shadow-xl"
-                        >
-                            <svg
-                                class="w-5 h-5"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                            >
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
-                                    clip-rule="evenodd"
-                                />
-                            </svg>
-                            <span>Back to Home</span>
-                        </a>
-
-                        <a
-                            href="index.html#download"
-                            class="bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-900 dark:text-white px-8 py-4 rounded-2xl font-bold text-lg transition-all duration-300 flex items-center space-x-2"
-                        >
-                            <svg
-                                class="w-5 h-5"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                            >
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
-                                    clip-rule="evenodd"
-                                />
-                            </svg>
-                            <span>Download Extension</span>
-                        </a>
-                    </div>
-
-                    <!-- Quick Links -->
-                    <div class="text-center">
-                        <p class="text-gray-500 dark:text-gray-400 mb-4">
-                            Quick links:
-                        </p>
-                        <div
-                            class="flex flex-wrap justify-center gap-4 text-sm"
-                        >
-                            <a
-                                href="index.html#features"
-                                class="text-primary hover:underline"
-                                >Features</a
-                            >
-                            <a
-                                href="index.html#services"
-                                class="text-primary hover:underline"
-                                >Supported Services</a
-                            >
-                            <a
-                                href="contact.html"
-                                class="text-primary hover:underline"
-                                >Contact Us</a
-                            >
-                            <a
-                                href="privacy.html"
-                                class="text-primary hover:underline"
-                                >Privacy Policy</a
-                            >
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Fun fact -->
-                <div
-                    class="bg-white/50 dark:bg-gray-800/50 rounded-2xl p-6 backdrop-blur-sm border border-gray-200 dark:border-gray-700"
-                >
-                    <p class="text-gray-600 dark:text-gray-300 text-lg">
-                        💡 <strong>Fun fact:</strong> While you're here, Intro
-                        Skipper has probably saved someone 30 seconds by
-                        skipping an intro!
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer
-            class="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 py-8 px-4 sm:px-6 lg:px-8"
-        >
-            <div class="max-w-6xl mx-auto">
-                <div
-                    class="flex flex-col md:flex-row justify-between items-center"
-                >
-                    <div class="flex items-center space-x-2 mb-4 md:mb-0">
-                        <img
-                            src="assets/icons/logo.png"
-                            alt="intro skipper logo"
-                            class="w-8 h-8"
-                        />
-                        <span class="text-xl font-bold text-primary"
-                            >Intro Skipper</span
-                        >
-                    </div>
-                    <div class="flex space-x-6">
-                        <a
-                            href="contact.html"
-                            class="text-gray-500 hover:text-primary transition-colors"
-                            >Contact</a
-                        >
-                        <a
-                            href="privacy.html"
-                            class="text-gray-500 hover:text-primary transition-colors"
-                            >Privacy</a
-                        >
-                    </div>
-                </div>
-
-                <div
-                    class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700 text-center text-gray-500 dark:text-gray-400"
-                >
-                    <p>
-                        &copy; <span id="year"></span> Intro Skipper. Made by
-                        <a
-                            href="https://dsourav.com"
-                            class="hover:text-primary transition-colors"
-                            >Sourav</a
-                        >
-                        with ❤️ for streamers everywhere.
-                    </p>
-                    <p class="mt-2 text-sm">
-                        Privacy-focused • Open Source • Free Forever
-                    </p>
-                </div>
-            </div>
-        </footer>
-
-        <script>
-            // ========== GITHUB STARS FETCHER ==========
-            async function fetchGitHubStars() {
-                try {
-                    const response = await fetch(
-                        "https://api.github.com/repos/dsouravcom/intro-skipper-ext"
-                    );
-                    const data = await response.json();
-                    const starCount = data.stargazers_count;
-
-                    const starCountElement =
-                        document.getElementById("starCount");
-                    if (starCountElement) {
-                        starCountElement.textContent = `⭐ ${starCount}`;
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
                     }
-                } catch (error) {
-                    console.log("Could not fetch GitHub stars:", error);
-                }
-            }
+                },
+            },
+        };
+    </script>
+</head>
+<body class="bg-background text-secondary antialiased selection:bg-primary selection:text-white overflow-hidden h-screen flex flex-col">
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 top-0 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-slate-200/50">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center gap-3">
+                    <a href="index.html" class="flex items-center gap-3">
+                        <img src="assets/icons/logo.png" alt="Intro Skipper" class="w-8 h-8 hover:rotate-12 transition-transform duration-300">
+                        <span class="font-serif font-bold text-xl tracking-tight">Intro Skipper</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-            // Initialize
-            document.addEventListener("DOMContentLoaded", function () {
-                document.getElementById("year").textContent =
-                    new Date().getFullYear();
-                fetchGitHubStars();
-            });
-        </script>
-    </body>
+    <!-- 404 Content -->
+    <main class="flex-grow flex items-center justify-center relative">
+        <div class="text-center px-6 relative z-10">
+            <h1 class="text-9xl font-serif font-bold text-slate-200 mb-4 select-none">404</h1>
+            <h2 class="text-3xl font-bold mb-6">Page Not Found</h2>
+            <p class="text-slate-500 mb-10 max-w-md mx-auto">
+                Oops! It seems you've skipped too far. The page you're looking for doesn't exist.
+            </p>
+            <a href="index.html" class="magnetic-btn inline-block px-8 py-4 bg-secondary text-white rounded-full font-medium hover:bg-primary transition-colors shadow-lg shadow-secondary/20">
+                Back to Home
+            </a>
+        </div>
+        
+        <!-- Decorative Elements -->
+        <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/5 rounded-full blur-3xl -z-10 animate-pulse"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-64 h-64 bg-accent/10 rounded-full blur-3xl -z-10 animate-pulse" style="animation-delay: 1s;"></div>
+    </main>
+
+    <script src="assets/script.js"></script>
+</body>
 </html>

@@ -9,113 +9,34 @@
         </title>
         <meta
             name="description"
-            content="Download the Intro Skipper extension for Chrome and Firefox - the ultimate Netflix intro skipper extension and Crunchyroll intro skipper that automatically detects and skips intro sequences across streaming platforms. Get the Chrome intro skipper extension download for free, with full source code available on the intro skipper extension GitHub repository."
+            content="Download the Intro Skipper extension for Chrome and Firefox - the ultimate Netflix intro skipper extension and Crunchyroll intro skipper that automatically detects and skips intro sequences across streaming platforms."
         />
-
-        <!-- SEO Meta Tags -->
         <meta
             name="keywords"
-            content="intro skipper, skip intro extension, netflix intro skipper, chrome extension, auto skip intros, netflix intro skipper extension, crunchyroll intro skipper extension netflix extension, crunchyroll extension"
+            content="intro skipper, skip intro extension, netflix intro skipper, chrome extension, auto skip intros"
         />
         <meta name="author" content="Sourav" />
         <meta name="robots" content="index, follow" />
-        <meta name="language" content="English" />
-        <meta name="revisit-after" content="7 days" />
-        <meta name="distribution" content="global" />
-        <meta name="rating" content="general" />
 
-        <!-- Open Graph Meta Tags for Social Media -->
+        <!-- Open Graph / Twitter Meta Tags -->
         <meta property="og:type" content="website" />
-        <meta
-            property="og:title"
-            content="Intro Skipper - Auto Skip Intros across your favorite streaming platforms | Free Chrome Extension"
-        />
+        <meta property="og:title" content="Intro Skipper - Auto Skip Intros" />
         <meta
             property="og:description"
-            content="Skip intros instantly across Netflix, Crunchyroll, and more streaming platforms. 100% free Chrome extension with smart detection and zero configuration."
+            content="Skip intros instantly across Netflix, Crunchyroll, and more."
         />
         <meta property="og:url" content="https://introskipper.dsourav.com/" />
-        <meta property="og:site_name" content="Intro Skipper" />
         <meta
             property="og:image"
-            content="https://res.cloudinary.com/dzjujoqyi/image/upload/v1751029465/intro-skipper/meta.png"
+            content="https://res.cloudinary.com/dzjujoqyi/image/upload/v1764920395/intro-skipper/meta.webp"
         />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta
-            property="og:image:alt"
-            content="Intro Skipper - Auto Skip Intros Extension Logo"
-        />
-        <meta property="og:locale" content="en_US" />
-
-        <!-- Twitter Card Meta Tags -->
         <meta name="twitter:card" content="summary_large_image" />
         <meta
-            name="twitter:title"
-            content="Intro Skipper - Auto Skip Intros across your favorite streaming platforms"
-        />
-        <meta
-            name="twitter:description"
-            content="Skip intros instantly across streaming platforms. Free Chrome extension with smart detection."
-        />
-        <meta
             name="twitter:image"
-            content="https://res.cloudinary.com/dzjujoqyi/image/upload/v1751029465/intro-skipper/meta.png"
+            content="https://res.cloudinary.com/dzjujoqyi/image/upload/v1764920395/intro-skipper/meta.webp"
         />
-        <meta name="twitter:image:alt" content="Intro Skipper Extension Logo" />
 
-        <!-- Additional SEO Meta Tags -->
-        <meta name="theme-color" content="#ff6b35" />
-        <meta name="msapplication-TileColor" content="#ff6b35" />
-        <meta name="application-name" content="Intro Skipper" />
-        <meta name="apple-mobile-web-app-title" content="Intro Skipper" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-
-        <!-- Canonical URL -->
         <link rel="canonical" href="https://introskipper.dsourav.com" />
-
-        <!-- Preconnect hints for performance optimization -->
-        <link rel="preconnect" href="https://cdn.tailwindcss.com" />
-        <link rel="preconnect" href="https://cdn.jsdelivr.net" />
-        <link rel="preconnect" href="https://api.github.com" />
-        <link
-            rel="preconnect"
-            href="https://sitebehaviour-cdn.fra1.cdn.digitaloceanspaces.com"
-        />
-
-        <!-- JSON-LD Structured Data -->
-        <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "SoftwareApplication",
-                "name": "Intro Skipper",
-                "description": "A powerful browser extension that intelligently detects and skips intro sequences across multiple streaming services with zero configuration required.",
-                "url": "https://introskipper.dsourav.com",
-                "downloadUrl": "https://chromewebstore.google.com/detail/cdmmdficgnfnennlmjieepedoamgppgk",
-                "author": {
-                    "@type": "Person",
-                    "name": "Sourav",
-                    "url": "https://dsourav.com"
-                },
-                "applicationCategory": "BrowserApplication",
-                "operatingSystem": "Chrome, Chromium-based browsers",
-                "offers": {
-                    "@type": "Offer",
-                    "price": "0",
-                    "priceCurrency": "USD"
-                },
-                "featureList": [
-                    "Auto Skip Intros across your favorite streaming platforms",
-                    "Smart detection across streaming platforms",
-                    "Zero configuration required",
-                    "Privacy-focused with no data collection",
-                    "Free forever",
-                    "Regular updates with new streaming services"
-                ],
-                "screenshot": "https://res.cloudinary.com/dzjujoqyi/image/upload/v1751029465/intro-skipper/meta.png"
-            }
-        </script>
-
         <link
             rel="icon"
             type="image/png"
@@ -131,445 +52,320 @@
         />
         <link rel="manifest" href="assets/site.webmanifest" />
 
-        <!-- Tailwind CSS - Load synchronously to prevent FOUC -->
+        <!-- Styles -->
         <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="assets/style.css" />
 
-        <!-- Heroicons - Load synchronously to prevent icon flash -->
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/style.css"
-        />
-
-        <!-- Custom Tailwind Config -->
         <script>
             tailwind.config = {
                 darkMode: "media",
                 theme: {
                     extend: {
                         colors: {
-                            primary: "#ff6b35",
-                            secondary: "#1a1a1a",
+                            primary: "#475569", // Slate 600
+                            secondary: "#1E293B", // Slate 800
+                            accent: "#94A3B8", // Slate 400
+                            background: "#F8FAFC", // Slate 50
+                            surface: "#FFFFFF",
+                        },
+                        fontFamily: {
+                            sans: ["Inter", "sans-serif"],
+                            serif: ["Playfair Display", "serif"],
                         },
                     },
                 },
             };
         </script>
-
-        <style>
-            /* Critical CSS to prevent FOUC */
-            body {
-                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                    Roboto, "Helvetica Neue", Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                line-height: 1.6;
-            }
-
-            .hero-gradient {
-                background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-            }
-
-            @media (prefers-color-scheme: dark) {
-                .hero-gradient {
-                    background: linear-gradient(
-                        135deg,
-                        #0f0f0f 0%,
-                        #1a1a1a 100%
-                    );
-                }
-                body {
-                    background-color: #111827;
-                    color: #f9fafb;
-                }
-            }
-
-            @media (prefers-color-scheme: light) {
-                .hero-gradient {
-                    background: linear-gradient(
-                        135deg,
-                        #f8fafc 0%,
-                        #e2e8f0 100%
-                    );
-                }
-                body {
-                    background-color: #ffffff;
-                    color: #111827;
-                }
-            }
-
-            .feature-card:hover {
-                transform: translateY(-4px);
-            }
-
-            .download-btn:hover {
-                transform: translateY(-2px) scale(1.05);
-                box-shadow: 0 20px 40px rgba(255, 107, 53, 0.4);
-            }
-
-            .download-btn {
-                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            }
-
-            /* Improved gradient animations */
-            .download-btn:hover {
-                background: linear-gradient(45deg, #ff6b35, #f59e0b, #ef4444);
-                background-size: 200% 200%;
-                animation: gradientShift 2s ease infinite;
-            }
-
-            @keyframes gradientShift {
-                0% {
-                    background-position: 0% 50%;
-                }
-                50% {
-                    background-position: 100% 50%;
-                }
-                100% {
-                    background-position: 0% 50%;
-                }
-            }
-        </style>
     </head>
-
     <body
-        class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300"
+        class="bg-background text-secondary antialiased selection:bg-primary selection:text-white overflow-x-hidden"
     >
-        <!-- Header -->
-        <header
-            class="fixed top-0 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700 z-50"
+        <!-- Navigation -->
+        <nav
+            class="fixed w-full z-50 top-0 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-slate-200/50"
         >
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex justify-between items-center h-16">
-                    <div class="flex items-center space-x-2">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="flex items-center justify-between h-20">
+                    <div class="flex items-center gap-3">
                         <img
                             src="assets/icons/logo.png"
-                            alt="intro skipper logo"
-                            class="w-8 h-8"
-                            loading="eager"
+                            alt="Intro Skipper"
+                            class="w-8 h-8 hover:rotate-12 transition-transform duration-300"
                         />
-                        <span class="text-xl font-bold text-primary"
+                        <span
+                            class="font-serif font-bold text-xl tracking-tight"
                             >Intro Skipper</span
                         >
                     </div>
-                    <nav class="hidden md:flex space-x-8 items-center">
+                    <div class="hidden md:flex items-center gap-8">
                         <a
                             href="#features"
-                            class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
+                            class="text-sm font-medium hover:text-primary transition-colors"
                             >Features</a
                         >
                         <a
                             href="#services"
-                            class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
+                            class="text-sm font-medium hover:text-primary transition-colors"
                             >Services</a
                         >
                         <a
-                            href="#download"
-                            class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
-                            >Download</a
-                        >
-                        <a
                             href="contact.html"
-                            class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
+                            class="text-sm font-medium hover:text-primary transition-colors"
                             >Contact</a
                         >
                         <a
-                            href="privacy.html"
-                            class="text-gray-600 dark:text-gray-300 hover:text-primary transition-colors"
-                            >Privacy</a
-                        >
-
-                        <!-- GitHub Stars Button -->
-                        <a
                             href="https://github.com/dsouravcom/intro-skipper-ext"
                             target="_blank"
-                            class="bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-900 dark:text-white px-3 py-2 rounded-lg font-medium text-sm transition-all duration-300 flex items-center space-x-2 border border-gray-300 dark:border-gray-600"
-                            id="githubStarsBtn"
+                            class="flex items-center gap-2 text-sm font-medium hover:text-primary transition-colors"
                         >
-                            <svg
-                                class="w-4 h-4"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                            >
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"
-                                    clip-rule="evenodd"
-                                />
-                            </svg>
                             <span id="starCount">⭐ Stars</span>
                         </a>
-                    </nav>
+                        <a
+                            href="#download"
+                            class="magnetic-btn px-6 py-2.5 bg-secondary text-white rounded-full text-sm font-medium hover:bg-primary transition-colors shadow-lg shadow-secondary/20"
+                        >
+                            Download
+                        </a>
+                    </div>
                 </div>
             </div>
-        </header>
+        </nav>
 
         <!-- Hero Section -->
-        <section class="hero-gradient pt-24 pb-16 px-4 sm:px-6 lg:px-8">
-            <div class="max-w-4xl mx-auto text-center">
-                <div class="my-8">
-                    <h1
-                        class="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-orange-500 bg-clip-text text-transparent"
-                    >
-                        Skip Intros Instantly
-                    </h1>
-                    <p
-                        class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto"
-                    >
-                        Automatically skip intros, credits, and ads across your
-                        favorite streaming platforms.
-                        <span class="text-primary font-semibold"
-                            >One extension, endless entertainment.</span
-                        >
-                    </p>
-                </div>
-
+        <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
                 <div
-                    class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8"
+                    class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"
                 >
-                    <!-- ========== HERO SECTION: PRIMARY DOWNLOAD BUTTON (DYNAMIC) ========== -->
-                    <!-- This button will dynamically update based on detected browser:
-                         - href: Updates to browser-specific extension store URL
-                         - Browser icon: Updates to Chrome/Firefox/Edge SVG
-                         - Alt text: Updates to "[Browser] icon"
-                         - Button text: Updates to browser-specific text -->
-                    <a
-                        href="https://chromewebstore.google.com/detail/cdmmdficgnfnennlmjieepedoamgppgk"
-                        id="primaryDownloadBtn"
-                        class="download-btn bg-gradient-to-r from-primary to-orange-500 hover:from-orange-500 hover:to-red-500 text-white px-8 py-4 rounded-2xl font-bold text-xl transition-all duration-300 flex items-center space-x-3 shadow-2xl hover:shadow-primary/50 transform hover:scale-105"
-                    >
-                        <!-- DYNAMIC ELEMENT: Browser icon changes based on detected browser -->
-                        <img
-                            src="assets/icons/Chrome.svg"
-                            alt="Chrome Icon"
-                            class="w-8 h-8"
-                            id="primaryBrowserIcon"
-                            loading="lazy"
-                        />
-                        <!-- DYNAMIC ELEMENT: Button text changes based on detected browser -->
-                        <span id="primaryBtnText" class="text-center"
-                            >Download for Chrome</span
+                    <div class="lg:col-span-7 reveal active">
+                        <h1
+                            class="text-5xl lg:text-7xl font-serif font-bold leading-tight mb-8"
                         >
-                    </a>
-                </div>
-
-                <!-- ========== HERO SECTION: ALSO AVAILABLE ON (DYNAMIC) ========== -->
-                <!-- This section will hide the current browser and show only other two browsers -->
-                <div class="flex justify-center items-center mb-4">
-                    <span class="mr-2 text-gray-600 dark:text-gray-300"
-                        >Also available on:</span
-                    >
-                    <div id="otherBrowsers" class="flex items-center space-x-1">
-                        <!-- DYNAMIC ELEMENT: Chrome link - Hidden if user is on Chrome -->
-                        <a
-                            href="https://chromewebstore.google.com/detail/cdmmdficgnfnennlmjieepedoamgppgk"
-                            target="_blank"
-                            id="chromeLink"
-                            class="hover:scale-110 transition-transform duration-200"
-                            title="Download for Chrome"
+                            Skip the boring,<br />
+                            <span class="text-primary italic"
+                                >watch the story.</span
+                            >
+                        </h1>
+                        <p
+                            class="text-lg text-slate-600 mb-10 max-w-lg leading-relaxed"
                         >
-                            <img
-                                src="assets/icons/Chrome.svg"
-                                alt="Chrome icon"
-                                class="w-6 h-6"
-                            />
-                        </a>
-
-                        <!-- DYNAMIC ELEMENT: Firefox link - Hidden if user is on Firefox -->
-                        <a
-                            href="https://addons.mozilla.org/en-US/firefox/addon/universal-intro-skipper/"
-                            target="_blank"
-                            id="firefoxLink"
-                            class="hover:scale-110 transition-transform duration-200"
-                            title="Download for Firefox"
-                        >
-                            <img
-                                src="assets/icons/Firefox.svg"
-                                alt="Firefox icon"
-                                class="w-10 h-10"
-                            />
-                        </a>
-
-                        <!-- DYNAMIC ELEMENT: Edge link - Hidden if user is on Edge -->
-                        <a
-                            href="https://chromewebstore.google.com/detail/cdmmdficgnfnennlmjieepedoamgppgk"
-                            target="_blank"
-                            id="edgeLink"
-                            class="hover:scale-110 transition-transform duration-200"
-                            title="Download for Edge"
-                        >
-                            <img
-                                src="assets/icons/Edge.svg"
-                                alt="Edge icon"
-                                class="w-7 h-7"
-                            />
-                        </a>
+                            An elegant browser extension that automatically
+                            detects and skips intros across your favorite
+                            streaming platforms. Zero configuration, pure
+                            entertainment.
+                        </p>
+                        <div class="flex flex-wrap gap-4 items-center">
+                            <a
+                                href="https://chromewebstore.google.com/detail/cdmmdficgnfnennlmjieepedoamgppgk"
+                                id="primaryDownloadBtn"
+                                class="magnetic-btn group relative px-8 py-4 bg-secondary text-white rounded-full font-medium overflow-hidden shadow-xl shadow-secondary/25 transition-all hover:shadow-2xl hover:shadow-secondary/40"
+                            >
+                                <div
+                                    class="absolute inset-0 w-full h-full bg-primary/20 group-hover:translate-x-full transition-transform duration-500 ease-out -translate-x-full"
+                                ></div>
+                                <div class="relative flex items-center gap-3">
+                                    <img
+                                        src="assets/icons/Chrome.svg"
+                                        id="primaryBrowserIcon"
+                                        class="w-5 h-5"
+                                        alt="Browser Icon"
+                                    />
+                                    <span id="primaryBtnText"
+                                        >Download for Chrome</span
+                                    >
+                                </div>
+                            </a>
+                            <div
+                                id="otherBrowsers"
+                                class="flex items-center gap-3 px-4"
+                            >
+                                <span class="text-sm text-slate-400"
+                                    >Also on:</span
+                                >
+                                <a
+                                    href="#"
+                                    id="chromeLink"
+                                    class="opacity-50 hover:opacity-100 transition-opacity"
+                                    ><img
+                                        src="assets/icons/Chrome.svg"
+                                        class="w-5 h-5"
+                                        alt="Chrome"
+                                /></a>
+                                <a
+                                    href="#"
+                                    id="firefoxLink"
+                                    class="opacity-50 hover:opacity-100 transition-opacity"
+                                    ><img
+                                        src="assets/icons/Firefox.svg"
+                                        class="w-5 h-5"
+                                        alt="Firefox"
+                                /></a>
+                                <a
+                                    href="#"
+                                    id="edgeLink"
+                                    class="opacity-50 hover:opacity-100 transition-opacity"
+                                    ><img
+                                        src="assets/icons/Edge.svg"
+                                        class="w-5 h-5"
+                                        alt="Edge"
+                                /></a>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    <div class="lg:col-span-5 relative reveal delay-200">
+                        <div
+                            class="relative z-10 bg-white p-2 rounded-2xl shadow-2xl shadow-slate-200/50 transform rotate-3 hover:rotate-0 transition-transform duration-700"
+                        >
+                            <div
+                                class="mock-player rounded-xl w-full aspect-video flex items-center justify-center"
+                            >
+                                <!-- Abstract Video Content -->
+                                <div class="absolute inset-0 opacity-20">
+                                    <div
+                                        class="w-full h-full bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImEiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTTAgNDBMMDQwIDBIMHoiIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4xIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2EpIi8+PC9zdmc+')]"
+                                    ></div>
+                                </div>
 
-                <div
-                    class="flex justify-center items-center space-x-8 text-sm text-gray-500 dark:text-gray-400"
-                >
-                    <div class="flex items-center space-x-1">
-                        <span>⭐</span>
-                        <span>4.8/5 Rating</span>
-                    </div>
-                    <div class="flex items-center space-x-1">
-                        <span>👥</span>
-                        <span>100+ Users</span>
-                    </div>
-                    <div class="flex items-center space-x-1">
-                        <span>🚀</span>
-                        <span>Free Forever</span>
+                                <!-- Play Icon (Abstract) -->
+                                <div
+                                    class="w-16 h-16 rounded-full border-2 border-white/20 flex items-center justify-center backdrop-blur-sm"
+                                >
+                                    <div
+                                        class="w-0 h-0 border-t-[10px] border-t-transparent border-l-[18px] border-l-white/80 border-b-[10px] border-b-transparent ml-1"
+                                    ></div>
+                                </div>
+
+                                <!-- Animated Skip Button -->
+                                <div class="skip-btn-anim">
+                                    <span>Skip Intro</span>
+                                    <svg
+                                        class="w-4 h-4"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M13 5l7 7-7 7M5 5l7 7-7 7"
+                                        ></path>
+                                    </svg>
+                                </div>
+
+                                <!-- Animated Cursor -->
+                                <div class="cursor-anim"></div>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute -top-10 -right-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl -z-10"
+                        ></div>
+                        <div
+                            class="absolute -bottom-10 -left-10 w-64 h-64 bg-accent/10 rounded-full blur-3xl -z-10"
+                        ></div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Features Section -->
-        <section
-            id="features"
-            class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-800"
-        >
-            <div class="max-w-6xl mx-auto">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">
-                        Why Choose Intro Skipper? 🤔
-                    </h2>
-                    <p
-                        class="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
-                    >
-                        Simple, fast, and reliable. Skip the boring parts and
-                        get straight to the content you love.
-                    </p>
-                </div>
+        <section id="features" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-16">
+                    <div class="col-span-1 md:col-span-3 mb-8 reveal">
+                        <h2 class="text-3xl font-serif font-bold mb-4">
+                            Designed for<br />simplicity.
+                        </h2>
+                        <div class="h-1 w-20 bg-primary"></div>
+                    </div>
 
-                <div class="grid md:grid-cols-3 gap-8">
-                    <div
-                        class="feature-card bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-lg transition-all duration-300 text-center"
-                    >
-                        <div class="text-4xl mb-4">⚡</div>
-                        <h3 class="text-xl font-semibold mb-3">
-                            Lightning Fast
-                        </h3>
-                        <p class="text-gray-600 dark:text-gray-300">
-                            Instantly detects and skips intros, credits, and ads
-                            without any delay. Zero buffering, maximum speed.
+                    <div class="group reveal delay-100">
+                        <div
+                            class="w-12 h-12 bg-slate-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/10 transition-colors"
+                        >
+                            <span class="text-2xl">⚡</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Lightning Fast</h3>
+                        <p class="text-slate-500 leading-relaxed">
+                            Instantly detects skip buttons. No buffering, no
+                            waiting. Just seamless viewing.
                         </p>
                     </div>
 
-                    <div
-                        class="feature-card bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-lg transition-all duration-300 text-center"
-                    >
-                        <div class="text-4xl mb-4">🎯</div>
-                        <h3 class="text-xl font-semibold mb-3">
-                            Smart Detection
-                        </h3>
-                        <p class="text-gray-600 dark:text-gray-300">
-                            Advanced algorithms recognize skip buttons across
-                            different streaming platforms automatically.
+                    <div class="group reveal delay-200">
+                        <div
+                            class="w-12 h-12 bg-slate-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/10 transition-colors"
+                        >
+                            <span class="text-2xl">🎯</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Smart Detection</h3>
+                        <p class="text-slate-500 leading-relaxed">
+                            Advanced algorithms that adapt to different players
+                            and streaming services automatically.
                         </p>
                     </div>
 
-                    <div
-                        class="feature-card bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-lg transition-all duration-300 text-center"
-                    >
-                        <div class="text-4xl mb-4">🎛️</div>
-                        <h3 class="text-xl font-semibold mb-3">Full Control</h3>
-                        <p class="text-gray-600 dark:text-gray-300">
-                            Customize which services and button types to skip.
-                            Master control to enable/disable everything.
-                        </p>
-                    </div>
-
-                    <div
-                        class="feature-card bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-lg transition-all duration-300 text-center"
-                    >
-                        <div class="text-4xl mb-4">🔒</div>
-                        <h3 class="text-xl font-semibold mb-3">
-                            Privacy First
-                        </h3>
-                        <p class="text-gray-600 dark:text-gray-300">
-                            No data collection, no tracking. All settings stored
-                            locally on your device.
-                        </p>
-                    </div>
-
-                    <div
-                        class="feature-card bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-lg transition-all duration-300 text-center"
-                    >
-                        <div class="text-4xl mb-4">🆓</div>
-                        <h3 class="text-xl font-semibold mb-3">
-                            Completely Free
-                        </h3>
-                        <p class="text-gray-600 dark:text-gray-300">
-                            No subscriptions, no premium features. Everything is
-                            free and always will be.
-                        </p>
-                    </div>
-
-                    <div
-                        class="feature-card bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-lg transition-all duration-300 text-center"
-                    >
-                        <div class="text-4xl mb-4">🔄</div>
-                        <h3 class="text-xl font-semibold mb-3">Auto Updates</h3>
-                        <p class="text-gray-600 dark:text-gray-300">
-                            New streaming services and features added regularly.
-                            Always up-to-date automatically.
+                    <div class="group reveal delay-300">
+                        <div
+                            class="w-12 h-12 bg-slate-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary/10 transition-colors"
+                        >
+                            <span class="text-2xl">🔒</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Privacy First</h3>
+                        <p class="text-slate-500 leading-relaxed">
+                            Your viewing habits are yours. We don't collect,
+                            store, or share any personal data.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Supported Services -->
-        <section id="services" class="py-20 px-4 sm:px-6 lg:px-8">
-            <div class="max-w-6xl mx-auto">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">
-                        Supported Streaming Services 📺
+        <!-- Services Section -->
+        <section id="services" class="py-24 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-3xl font-serif font-bold mb-4">
+                        Supported Platforms
                     </h2>
-                    <p
-                        class="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
-                    >
-                        Works seamlessly across all major streaming platforms.
-                        More services added regularly.
+                    <p class="text-slate-500">
+                        Works seamlessly where you watch.
                     </p>
                 </div>
 
-                <div
-                    class="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto"
-                >
+                <div class="flex flex-wrap justify-center gap-8">
                     <div
-                        class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md text-center transition-all duration-300 hover:shadow-lg flex-shrink-0 w-full max-w-[280px] sm:w-[200px]"
+                        class="bg-white px-10 py-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow flex flex-col items-center gap-4 w-48 reveal"
                     >
                         <img
-                            src="/assets/icons/netflix_logo.svg"
-                            alt="netflix logo"
-                            loading="lazy"
-                            class="w-16 h-16 mx-auto mb-2"
+                            src="assets/icons/netflix_logo.svg"
+                            alt="Netflix"
+                            class="w-12 h-12 grayscale hover:grayscale-0 transition-all duration-500"
                         />
-                        <div class="font-semibold text-lg">Netflix</div>
+                        <span class="font-medium text-slate-700">Netflix</span>
                     </div>
-
                     <div
-                        class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md text-center transition-all duration-300 hover:shadow-lg flex-shrink-0 w-full max-w-[280px] sm:w-[200px]"
+                        class="bg-white px-10 py-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow flex flex-col items-center gap-4 w-48 reveal delay-100"
                     >
                         <img
-                            src="/assets/icons/crunchyroll_logo.svg"
-                            alt="crunchyroll logo"
-                            loading="lazy"
-                            class="w-16 h-16 mx-auto mb-2"
+                            src="assets/icons/crunchyroll_logo.svg"
+                            alt="Crunchyroll"
+                            class="w-12 h-12 grayscale hover:grayscale-0 transition-all duration-500"
                         />
-                        <div class="font-semibold text-lg">Crunchyroll</div>
+                        <span class="font-medium text-slate-700"
+                            >Crunchyroll</span
+                        >
                     </div>
-
                     <div
-                        class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md text-center transition-all duration-300 hover:shadow-lg flex-shrink-0 w-full max-w-[280px] sm:w-[200px]"
+                        class="bg-white px-10 py-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow flex flex-col items-center gap-4 w-48 reveal delay-200"
                     >
-                        <div class="text-3xl mb-3">🔄</div>
-                        <div class="font-semibold text-lg">
-                            More coming soon
-                        </div>
+                        <span
+                            class="text-3xl grayscale hover:grayscale-0 transition-all"
+                            >✨</span
+                        >
+                        <span class="font-medium text-slate-700"
+                            >More Soon</span
+                        >
                     </div>
                 </div>
             </div>
@@ -578,442 +374,109 @@
         <!-- Download Section -->
         <section
             id="download"
-            class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-800"
+            class="py-32 bg-secondary text-white relative overflow-hidden"
         >
-            <div class="max-w-4xl mx-auto text-center">
-                <div class="mb-8">
-                    <h2 class="text-3xl md:text-4xl font-bold mb-4">
-                        Ready to Skip the Boring Parts? 🚀
-                    </h2>
-                    <p class="text-xl text-gray-600 dark:text-gray-300 mb-8">
-                        Join thousands of users who save hours every week.
-                        Install now and start skipping instantly.
-                    </p>
-                </div>
-
-                <div
-                    class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8"
+            <div
+                class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48L3N2Zz4=')] opacity-20"
+            ></div>
+            <div
+                class="max-w-4xl mx-auto px-6 lg:px-8 text-center relative z-10"
+            >
+                <h2
+                    class="text-4xl md:text-5xl font-serif font-bold mb-8 reveal"
                 >
-                    <!-- ========== DOWNLOAD SECTION: MAIN DOWNLOAD BUTTON (DYNAMIC) ========== -->
-                    <!-- This button will dynamically update based on detected browser:
-                         - href: Updates to browser-specific extension store URL
-                         - Browser icon: Updates to Chrome/Firefox/Edge SVG
-                         - Alt text: Updates to "[Browser] icon"
-                         - Button text: Updates to browser-specific text -->
-                    <a
-                        href="https://chromewebstore.google.com/detail/cdmmdficgnfnennlmjieepedoamgppgk"
-                        id="mainDownloadBtn"
-                        target="_blank"
-                        class="download-btn bg-gradient-to-r from-primary to-orange-500 hover:from-orange-500 hover:to-red-500 text-white px-8 py-4 rounded-2xl font-bold text-2xl transition-all duration-300 flex items-center space-x-3 shadow-2xl hover:shadow-primary/50 transform hover:scale-105"
-                    >
-                        <!-- DYNAMIC ELEMENT: Browser icon changes based on detected browser -->
-                        <img
-                            src="assets/icons/Chrome.svg"
-                            alt="Chrome Icon"
-                            class="w-8 h-8"
-                            id="mainBrowserIcon"
-                        />
-                        <!-- DYNAMIC ELEMENT: Button text changes based on detected browser -->
-                        <span id="mainBtnText">Download for Chrome</span>
-                    </a>
-                </div>
-
-                <p class="text-sm text-gray-500 dark:text-gray-400 mt-4">
-                    You can also check out the open-source
-                    <a
-                        href="https://github.com/dsouravcom/intro-skipper-ext"
-                        target="_blank"
-                        class="underline text-primary"
-                        >Intro Skipper extension on GitHub</a
-                    >.
+                    Ready to upgrade your<br />viewing experience?
+                </h2>
+                <p
+                    class="text-slate-400 text-lg mb-12 max-w-xl mx-auto reveal delay-100"
+                >
+                    Join thousands of users who save hours every week. Free
+                    forever, open source, and privacy-focused.
                 </p>
 
-                <!-- ========== DOWNLOAD SECTION: ALSO AVAILABLE ON (DYNAMIC) ========== -->
-                <!-- This section will hide the current browser and show only other two browsers -->
-                <div class="flex justify-center items-center mb-4">
-                    <span class="text-gray-600 dark:text-gray-300"
-                        >Also available on:</span
+                <div class="flex flex-col items-center gap-6 reveal delay-200">
+                    <a
+                        href="#"
+                        id="mainDownloadBtn"
+                        class="magnetic-btn bg-white text-secondary px-10 py-5 rounded-full font-bold text-lg hover:bg-slate-100 transition-colors shadow-2xl shadow-white/10 flex items-center gap-3"
                     >
+                        <img
+                            src="assets/icons/Chrome.svg"
+                            id="mainBrowserIcon"
+                            class="w-6 h-6"
+                            alt="Browser"
+                        />
+                        <span id="mainBtnText">Download for Chrome</span>
+                    </a>
+
                     <div
-                        id="downloadOtherBrowsers"
-                        class="flex items-center space-x-1 ml-2"
+                        class="flex items-center gap-4 text-sm text-slate-500 mt-4"
                     >
-                        <!-- DYNAMIC ELEMENT: Chrome link - Hidden if user is on Chrome -->
-                        <a
-                            href="https://chromewebstore.google.com/detail/cdmmdficgnfnennlmjieepedoamgppgk"
-                            target="_blank"
-                            id="downloadChromeLink"
-                            class="hover:scale-110 transition-transform duration-200"
-                            title="Download for Chrome"
-                        >
-                            <img
-                                src="assets/icons/Chrome.svg"
-                                alt="Chrome icon"
-                                class="w-6 h-6"
-                            />
-                        </a>
-
-                        <!-- DYNAMIC ELEMENT: Firefox link - Hidden if user is on Firefox -->
-                        <a
-                            href="https://addons.mozilla.org/en-US/firefox/addon/universal-intro-skipper/"
-                            target="_blank"
-                            id="downloadFirefoxLink"
-                            class="hover:scale-110 transition-transform duration-200"
-                            title="Download for Firefox"
-                        >
-                            <img
-                                src="assets/icons/Firefox.svg"
-                                alt="Firefox icon"
-                                class="w-10 h-10"
-                            />
-                        </a>
-
-                        <!-- DYNAMIC ELEMENT: Edge link - Hidden if user is on Edge -->
-                        <a
-                            href="https://chromewebstore.google.com/detail/cdmmdficgnfnennlmjieepedoamgppgk"
-                            target="_blank"
-                            id="downloadEdgeLink"
-                            class="hover:scale-110 transition-transform duration-200"
-                            title="Download for Edge"
-                        >
-                            <img
-                                src="assets/icons/Edge.svg"
-                                alt="Edge icon"
-                                class="w-7 h-7"
-                            />
-                        </a>
-                    </div>
-                </div>
-
-                <div class="text-center">
-                    <p class="text-gray-500 dark:text-gray-400 mb-4">
-                        Installation is simple:
-                    </p>
-                    <div
-                        class="flex flex-col sm:flex-row justify-center items-center space-y-2 sm:space-y-0 sm:space-x-4 text-sm"
-                    >
-                        <div class="flex items-center space-x-2">
-                            <span
-                                class="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center font-bold"
-                                >1</span
+                        <span id="downloadOtherBrowsers" class="flex gap-3">
+                            <a
+                                href="#"
+                                id="downloadChromeLink"
+                                class="hover:text-white transition-colors"
+                                >Chrome</a
                             >
-                            <!-- DYNAMIC ELEMENT: Step text changes based on detected browser -->
-                            <span id="stepOneText"
-                                >Click "Download for Chrome"</span
+                            <a
+                                href="#"
+                                id="downloadFirefoxLink"
+                                class="hover:text-white transition-colors"
+                                >Firefox</a
                             >
-                        </div>
-                        <div class="hidden sm:block">→</div>
-                        <div class="flex items-center space-x-2">
-                            <span
-                                class="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center font-bold"
-                                >2</span
+                            <a
+                                href="#"
+                                id="downloadEdgeLink"
+                                class="hover:text-white transition-colors"
+                                >Edge</a
                             >
-                            <span>Confirm installation</span>
-                        </div>
-                        <div class="hidden sm:block">→</div>
-                        <div class="flex items-center space-x-2">
-                            <span
-                                class="bg-primary text-white rounded-full w-6 h-6 flex items-center justify-center font-bold"
-                                >3</span
-                            >
-                            <span>Start streaming!</span>
-                        </div>
+                        </span>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Footer -->
-        <footer
-            class="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 py-12 px-4 sm:px-6 lg:px-8"
-        >
-            <div class="max-w-6xl mx-auto">
-                <div
-                    class="flex flex-col md:flex-row justify-between items-center"
-                >
-                    <div class="flex items-center space-x-2 mb-4 md:mb-0">
-                        <img
-                            src="assets/icons/logo.png"
-                            alt="intro skipper logo"
-                            class="w-8 h-8"
-                        />
-                        <span class="text-xl font-bold text-primary"
-                            >Intro Skipper</span
-                        >
-                    </div>
-                    <div class="flex space-x-6">
-                        <a
-                            href="contact.html"
-                            class="text-gray-500 hover:text-primary transition-colors"
-                        >
-                            Contact
-                        </a>
-                        <a
-                            href="privacy.html"
-                            class="text-gray-500 hover:text-primary transition-colors"
-                        >
-                            Privacy
-                        </a>
-                    </div>
+        <footer class="bg-white py-12 border-t border-slate-100">
+            <div
+                class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6"
+            >
+                <div class="flex items-center gap-2">
+                    <img
+                        src="assets/icons/logo.png"
+                        alt="Logo"
+                        class="w-6 h-6 opacity-80"
+                    />
+                    <span class="font-serif font-bold text-lg text-slate-800"
+                        >Intro Skipper</span
+                    >
                 </div>
 
-                <div
-                    class="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700 text-center text-gray-500 dark:text-gray-400"
-                >
-                    <p>
-                        &copy; <span id="year"></span> Intro Skipper. Made by
-                        <a href="https://dsourav.com">Sourav</a> with ❤️ for
-                        streamers everywhere.
-                    </p>
-                    <p class="mt-2 text-sm">
-                        Privacy-focused • Open Source • Free Forever
-                    </p>
+                <div class="flex gap-8 text-sm font-medium text-slate-500">
+                    <a
+                        href="contact.html"
+                        class="hover:text-primary transition-colors"
+                        >Contact</a
+                    >
+                    <a
+                        href="privacy.html"
+                        class="hover:text-primary transition-colors"
+                        >Privacy</a
+                    >
+                    <a
+                        href="https://github.com/dsouravcom/intro-skipper-ext"
+                        class="hover:text-primary transition-colors"
+                        >GitHub</a
+                    >
+                </div>
+
+                <div class="text-sm text-slate-400">
+                    &copy; <span id="year"></span> Intro Skipper.
                 </div>
             </div>
         </footer>
 
-        <script type="text/javascript">
-            // Defer site behavior tracking to prevent render blocking
-            function loadSiteBehaviorTracking() {
-                var sbSiteSecret = "9f90fd4b-f95d-4eca-b939-7deba3d119b7";
-                window.sitebehaviourTrackingSecret = sbSiteSecret;
-                var scriptElement = document.createElement("script");
-                scriptElement.defer = true;
-                scriptElement.id = "site-behaviour-script-v2";
-                scriptElement.src =
-                    "https://sitebehaviour-cdn.fra1.cdn.digitaloceanspaces.com/index.min.js?sitebehaviour-secret=" +
-                    sbSiteSecret;
-                document.head.appendChild(scriptElement);
-            }
-        </script>
-
-        <!-- ========== DYNAMIC BROWSER DETECTION AND CONFIGURATION SCRIPT ========== -->
-        <script>
-            // ========== BROWSER DETECTION FUNCTION ==========
-            // Detects user's browser based on user agent string
-            // Returns: 'chrome', 'firefox', 'edge', or 'chrome' (default)
-            function detectBrowser() {
-                const userAgent = navigator.userAgent.toLowerCase();
-
-                if (userAgent.includes("edg/")) {
-                    return "edge";
-                } else if (userAgent.includes("firefox")) {
-                    return "firefox";
-                } else if (
-                    userAgent.includes("chrome") &&
-                    !userAgent.includes("edg/")
-                ) {
-                    return "chrome";
-                } else {
-                    return "chrome"; // Default to Chrome for unknown browsers
-                }
-            }
-
-            // ========== MAIN CONFIGURATION FUNCTION ==========
-            // This function updates all dynamic elements based on detected browser
-            function configureBrowserButtons() {
-                const browser = detectBrowser();
-
-                // ========== BROWSER-SPECIFIC CONFIGURATIONS ==========
-                // Each browser has its own URL, text, logo, and alt text
-                const browserConfigs = {
-                    chrome: {
-                        name: "Chrome",
-                        url: "https://chromewebstore.google.com/detail/cdmmdficgnfnennlmjieepedoamgppgk",
-                        heroText: "Download for Chrome",
-                        downloadText: "Download for Chrome",
-                        logo: "assets/icons/Chrome.svg",
-                        altText: "Chrome icon",
-                    },
-                    firefox: {
-                        name: "Firefox",
-                        url: "https://addons.mozilla.org/en-US/firefox/addon/universal-intro-skipper/",
-                        heroText: "Download for Firefox",
-                        downloadText: "Download for Firefox",
-                        logo: "assets/icons/Firefox.svg",
-                        altText: "Firefox icon",
-                    },
-                    edge: {
-                        name: "Edge",
-                        url: "https://chromewebstore.google.com/detail/cdmmdficgnfnennlmjieepedoamgppgk",
-                        heroText: "Download for Edge",
-                        downloadText: "Download for Edge",
-                        logo: "assets/icons/Edge.svg",
-                        altText: "Edge icon",
-                    },
-                };
-
-                const config = browserConfigs[browser];
-
-                // ========== UPDATE HERO SECTION PRIMARY DOWNLOAD BUTTON ==========
-                // Updates: href, button text, browser icon, alt text
-                const primaryBtn =
-                    document.getElementById("primaryDownloadBtn");
-                const primaryBtnText =
-                    document.getElementById("primaryBtnText");
-                const primaryBrowserIcon =
-                    document.getElementById("primaryBrowserIcon");
-                if (primaryBtn && primaryBtnText && primaryBrowserIcon) {
-                    primaryBtn.href = config.url; // Update link URL
-                    primaryBtnText.textContent = config.heroText; // Update button text
-                    primaryBrowserIcon.src = config.logo; // Update browser icon
-                    primaryBrowserIcon.alt = config.altText; // Update alt text
-                }
-
-                // ========== UPDATE DOWNLOAD SECTION MAIN DOWNLOAD BUTTON ==========
-                // Updates: href, button text, browser icon, alt text
-                const mainBtn = document.getElementById("mainDownloadBtn");
-                const mainBtnText = document.getElementById("mainBtnText");
-                const mainBrowserIcon =
-                    document.getElementById("mainBrowserIcon");
-                if (mainBtn && mainBtnText && mainBrowserIcon) {
-                    mainBtn.href = config.url; // Update link URL
-                    mainBtnText.textContent = config.downloadText; // Update button text
-                    mainBrowserIcon.src = config.logo; // Update browser icon
-                    mainBrowserIcon.alt = config.altText; // Update alt text
-                }
-
-                // ========== UPDATE INSTALLATION STEP TEXT ==========
-                // Updates the first step to show browser-specific text: "Add to [Browser]"
-                const stepOneText = document.getElementById("stepOneText");
-                if (stepOneText) {
-                    stepOneText.textContent = `Click "Download for ${config.name}"`;
-                }
-
-                // ========== HIDE CURRENT BROWSER FROM "ALSO AVAILABLE ON" SECTIONS ==========
-                hideCurrentBrowserFromList(browser);
-            }
-
-            // ========== FUNCTION TO HIDE CURRENT BROWSER FROM ALTERNATIVE LISTS ==========
-            // Hides the current browser from both hero and download "also available on" sections
-            function hideCurrentBrowserFromList(currentBrowser) {
-                // ========== HIDE FROM HERO SECTION ==========
-                // Finds and hides the current browser link in hero section
-                // Element IDs: chromeLink, firefoxLink, edgeLink
-                const heroCurrentBrowserLink = document.getElementById(
-                    currentBrowser + "Link"
-                );
-                if (heroCurrentBrowserLink) {
-                    heroCurrentBrowserLink.style.display = "none";
-                }
-
-                // ========== HIDE FROM DOWNLOAD SECTION ==========
-                // Finds and hides the current browser link in download section
-                // Element IDs: downloadChromeLink, downloadFirefoxLink, downloadEdgeLink
-                const downloadCurrentBrowserLink = document.getElementById(
-                    "download" +
-                        currentBrowser.charAt(0).toUpperCase() +
-                        currentBrowser.slice(1) +
-                        "Link"
-                );
-                if (downloadCurrentBrowserLink) {
-                    downloadCurrentBrowserLink.style.display = "none";
-                }
-
-                // ========== ADJUST SPACING WHEN BROWSER IS HIDDEN ==========
-                // Adds center justification to both browser lists when an item is hidden
-                const otherBrowsersDiv =
-                    document.getElementById("otherBrowsers");
-                const downloadOtherBrowsersDiv = document.getElementById(
-                    "downloadOtherBrowsers"
-                );
-
-                if (otherBrowsersDiv) {
-                    otherBrowsersDiv.classList.add("justify-center");
-                }
-                if (downloadOtherBrowsersDiv) {
-                    downloadOtherBrowsersDiv.classList.add("justify-center");
-                }
-            }
-
-            // ========== GITHUB STARS FETCHER ==========
-            // Fetches and displays the current star count from GitHub API
-            // Deferred to prevent blocking initial render
-            async function fetchGitHubStars() {
-                try {
-                    // Add delay to prevent blocking critical rendering
-                    await new Promise((resolve) => setTimeout(resolve, 1000));
-
-                    const response = await fetch(
-                        "https://api.github.com/repos/dsouravcom/intro-skipper-ext"
-                    );
-                    const data = await response.json();
-                    const starCount = data.stargazers_count;
-
-                    const starCountElement =
-                        document.getElementById("starCount");
-                    if (starCountElement) {
-                        starCountElement.textContent = `⭐ ${starCount}`;
-                    }
-                } catch (error) {
-                    console.log("Could not fetch GitHub stars:", error);
-                    // Keep default text if API fails
-                }
-            }
-
-            // ========== INITIALIZE DYNAMIC FUNCTIONALITY ==========
-            // Runs when the page loads to set up all dynamic elements
-            document.addEventListener("DOMContentLoaded", function () {
-                // Set current year in footer
-                document.getElementById("year").textContent =
-                    new Date().getFullYear();
-
-                // ========== TRIGGER BROWSER-SPECIFIC CONFIGURATION ==========
-                // This is the main call that updates all dynamic elements
-                configureBrowserButtons();
-
-                // ========== FETCH GITHUB STARS ==========
-                // Fetch and display GitHub stars count (deferred)
-                if ("requestIdleCallback" in window) {
-                    requestIdleCallback(fetchGitHubStars);
-                } else {
-                    setTimeout(fetchGitHubStars, 2000);
-                }
-            });
-
-            // ========== SMOOTH SCROLLING FOR ANCHOR LINKS ==========
-            // Enables smooth scrolling when clicking navigation links
-            document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-                anchor.addEventListener("click", function (e) {
-                    e.preventDefault();
-                    const target = document.querySelector(
-                        this.getAttribute("href")
-                    );
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: "smooth",
-                            block: "start",
-                        });
-                    }
-                });
-            });
-
-            // ========== ACTIVE NAVIGATION HIGHLIGHTING ==========
-            // Highlights the current section in the navigation menu while scrolling
-            window.addEventListener("scroll", () => {
-                const sections = document.querySelectorAll("section[id]");
-                const navLinks = document.querySelectorAll('nav a[href^="#"]');
-
-                let current = "";
-                sections.forEach((section) => {
-                    const sectionTop = section.getBoundingClientRect().top;
-                    if (sectionTop <= 100) {
-                        current = section.getAttribute("id");
-                    }
-                });
-
-                navLinks.forEach((link) => {
-                    link.classList.remove("text-primary");
-                    link.classList.add("text-gray-600", "dark:text-gray-300");
-                    if (link.getAttribute("href") === `#${current}`) {
-                        link.classList.remove(
-                            "text-gray-600",
-                            "dark:text-gray-300"
-                        );
-                        link.classList.add("text-primary");
-                    }
-                });
-            });
-        </script>
+        <script src="assets/script.js"></script>
     </body>
 </html>
