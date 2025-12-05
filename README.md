@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/icons/logo.png" alt="Intro Skipper Logo" width="128" height="128">
+<img src="assets/icons/logo.svg" alt="Intro Skipper Logo" width="128" height="128">
 
 # Intro Skipper Landing Page
 
@@ -37,7 +37,7 @@ intro-skipper-landing/
 ├── assets/
 │   ├── site.webmanifest
 │   └── icons/
-│       ├── logo.png
+│       ├── logo.svg
 │       ├── favicon.svg
 │       ├── favicon-96x96.png
 │       ├── apple-touch-icon.png
