@@ -1,189 +1,400 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us - Intro Skipper | Get in Touch</title>
-    <meta name="description" content="Get in touch with the Intro Skipper team. Send us your feedback, questions, or feature requests." />
-    <meta name="keywords" content="intro skipper contact, feedback, support, chrome extension help" />
-    <meta name="author" content="Sourav" />
-    <meta name="robots" content="index, follow" />
-    
-    <!-- Open Graph / Twitter Meta Tags -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Contact Us - Intro Skipper" />
-    <meta property="og:description" content="Get in touch with the Intro Skipper team." />
-    <meta property="og:url" content="https://introskipper.dsourav.com/contact" />
-    <meta property="og:image" content="https://res.cloudinary.com/dzjujoqyi/image/upload/v1764920714/intro-skipper/meta-contact.webp" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://res.cloudinary.com/dzjujoqyi/image/upload/v1764920714/intro-skipper/meta-contact.webp" />
-    
-    <link rel="canonical" href="https://introskipper.dsourav.com/contact" />
-    <link rel="icon" type="image/png" href="assets/icons/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
-    <link rel="manifest" href="assets/site.webmanifest" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact Us - Intro Skipper | Get in Touch</title>
+        <meta
+            name="description"
+            content="Get in touch with the Intro Skipper team. Send us your feedback, questions, or feature requests."
+        />
+        <meta
+            name="keywords"
+            content="intro skipper contact, feedback, support, chrome extension help"
+        />
+        <meta name="author" content="Sourav" />
+        <meta name="robots" content="index, follow" />
 
-    <!-- Styles -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="assets/style.css">
-    
-    <script>
-        tailwind.config = {
-            darkMode: "media",
-            theme: {
-                extend: {
-                    colors: {
-                        primary: "#475569", // Slate 600
-                        secondary: "#1E293B", // Slate 800
-                        accent: "#94A3B8", // Slate 400
-                        background: "#F8FAFC", // Slate 50
-                        surface: "#FFFFFF",
+        <!-- Open Graph / Twitter Meta Tags -->
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Contact Us - Intro Skipper" />
+        <meta
+            property="og:description"
+            content="Get in touch with the Intro Skipper team."
+        />
+        <meta
+            property="og:url"
+            content="https://introskipper.dsourav.com/contact"
+        />
+        <meta
+            property="og:image"
+            content="https://res.cloudinary.com/dzjujoqyi/image/upload/v1764920714/intro-skipper/meta-contact.webp"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:image"
+            content="https://res.cloudinary.com/dzjujoqyi/image/upload/v1764920714/intro-skipper/meta-contact.webp"
+        />
+
+        <link rel="canonical" href="https://introskipper.dsourav.com/contact" />
+        <link
+            rel="icon"
+            type="image/png"
+            href="assets/icons/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+        <link rel="shortcut icon" href="favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="assets/icons/apple-touch-icon.png"
+        />
+        <link rel="manifest" href="assets/site.webmanifest" />
+
+        <!-- Styles -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="assets/style.css" />
+
+        <script>
+            tailwind.config = {
+                darkMode: "media",
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: "#475569", // Slate 600
+                            secondary: "#1E293B", // Slate 800
+                            accent: "#94A3B8", // Slate 400
+                            background: "#F8FAFC", // Slate 50
+                            surface: "#FFFFFF",
+                        },
+                        fontFamily: {
+                            sans: ["Inter", "sans-serif"],
+                            serif: ["Playfair Display", "serif"],
+                        },
                     },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        serif: ['Playfair Display', 'serif'],
-                    }
                 },
-            },
-        };
-    </script>
-</head>
-<body class="bg-background text-secondary antialiased selection:bg-primary selection:text-white overflow-x-hidden">
-    
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 top-0 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-slate-200/50">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                <div class="flex items-center gap-3">
-                    <a href="index.html" class="flex items-center gap-3">
-                        <img src="assets/icons/logo.svg" alt="Intro Skipper" class="w-8 h-8 hover:rotate-12 transition-transform duration-300">
-                        <span class="font-serif font-bold text-xl tracking-tight">Intro Skipper</span>
-                    </a>
-                </div>
-                <div class="hidden md:flex items-center gap-8">
-                    <a href="index.html#features" class="text-sm font-medium hover:text-primary transition-colors">Features</a>
-                    <a href="index.html#services" class="text-sm font-medium hover:text-primary transition-colors">Services</a>
-                    <a href="contact.html" class="text-sm font-medium text-primary transition-colors">Contact</a>
-                    <a href="https://github.com/dsouravcom/intro-skipper-ext" target="_blank" class="flex items-center gap-2 text-sm font-medium hover:text-primary transition-colors">
-                        <span id="starCount">⭐ Stars</span>
-                    </a>
-                    <a href="index.html#download" class="magnetic-btn px-6 py-2.5 bg-secondary text-white rounded-full text-sm font-medium hover:bg-primary transition-colors shadow-lg shadow-secondary/20">
-                        Download
-                    </a>
+            };
+        </script>
+    </head>
+    <body
+        class="bg-background text-secondary antialiased selection:bg-primary selection:text-white overflow-x-hidden"
+    >
+        <!-- Navigation -->
+        <nav
+            class="fixed w-full z-50 top-0 transition-all duration-300 bg-white/80 backdrop-blur-md border-b border-slate-200/50"
+        >
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="flex items-center justify-between h-20">
+                    <div class="flex items-center gap-3">
+                        <a href="index.html" class="flex items-center gap-3">
+                            <img
+                                src="assets/icons/logo.svg"
+                                alt="Intro Skipper"
+                                class="w-8 h-8 hover:rotate-12 transition-transform duration-300"
+                            />
+                            <span
+                                class="font-serif font-bold text-xl tracking-tight"
+                                >Intro Skipper</span
+                            >
+                        </a>
+                    </div>
+                    <div class="hidden md:flex items-center gap-8">
+                        <a
+                            href="index.html#features"
+                            class="text-sm font-medium hover:text-primary transition-colors"
+                            >Features</a
+                        >
+                        <a
+                            href="index.html#services"
+                            class="text-sm font-medium hover:text-primary transition-colors"
+                            >Services</a
+                        >
+                        <a
+                            href="contact.html"
+                            class="text-sm font-medium text-primary transition-colors"
+                            >Contact</a
+                        >
+                        <a
+                            href="https://github.com/dsouravcom/intro-skipper-ext"
+                            target="_blank"
+                            class="flex items-center gap-2 text-sm font-medium hover:text-primary transition-colors"
+                        >
+                            <span id="starCount">⭐ Stars</span>
+                        </a>
+                        <a
+                            href="index.html#download"
+                            class="magnetic-btn px-6 py-2.5 bg-secondary text-white rounded-full text-sm font-medium hover:bg-primary transition-colors shadow-lg shadow-secondary/20"
+                        >
+                            Download
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <!-- Hero Section -->
-    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
-        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-            <h1 class="text-5xl lg:text-7xl font-serif font-bold leading-tight mb-8 reveal active">
-                Get in Touch
-            </h1>
-            <p class="text-lg text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed reveal delay-100">
-                Have feedback, questions, or feature requests? We'd love to hear from you.
-            </p>
-        </div>
-    </section>
+        <!-- Hero Section -->
+        <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+            <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+                <h1
+                    class="text-5xl lg:text-7xl font-serif font-bold leading-tight mb-8 reveal active"
+                >
+                    Get in Touch
+                </h1>
+                <p
+                    class="text-lg text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed reveal delay-100"
+                >
+                    Have feedback, questions, or feature requests? We'd love to
+                    hear from you.
+                </p>
+            </div>
+        </section>
 
-    <!-- Contact Content -->
-    <section class="pb-24">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="grid md:grid-cols-2 gap-16 items-start">
-                <div class="reveal delay-200">
-                    <h2 class="text-3xl font-serif font-bold mb-6">Let's Talk</h2>
-                    <p class="text-slate-600 mb-8 leading-relaxed">
-                        Whether you've found a bug, have a feature request, or just want to say hello, I'm here to help make Intro Skipper even better.
-                    </p>
-                    
-                    <div class="space-y-6">
-                        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-slate-100">
-                            <div class="flex items-start gap-4">
-                                <span class="text-2xl">🚀</span>
-                                <div>
-                                    <h3 class="font-bold text-lg mb-1">Feature Requests</h3>
-                                    <p class="text-slate-500 text-sm">Got ideas for new streaming services or features?</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-slate-100">
-                            <div class="flex items-start gap-4">
-                                <span class="text-2xl">🐛</span>
-                                <div>
-                                    <h3 class="font-bold text-lg mb-1">Bug Reports</h3>
-                                    <p class="text-slate-500 text-sm">Found something that's not working right?</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-slate-100">
-                            <div class="flex items-start gap-4">
-                                <span class="text-2xl">💡</span>
-                                <div>
-                                    <h3 class="font-bold text-lg mb-1">General Feedback</h3>
-                                    <p class="text-slate-500 text-sm">Share your thoughts on how we can improve.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="mt-8 pt-8 border-t border-slate-200">
-                        <p class="text-slate-500">
-                            You can also reach out via <a href="https://github.com/dsouravcom/intro-skipper-ext/issues" target="_blank" class="text-primary font-medium hover:underline">GitHub Issues</a> or email directly at <a href="mailto:contact@dsourav.com" class="text-primary font-medium hover:underline">contact@dsourav.com</a>.
+        <!-- Contact Content -->
+        <section class="pb-24">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-16 items-start">
+                    <div class="reveal delay-200">
+                        <h2 class="text-3xl font-serif font-bold mb-6">
+                            Let's Talk
+                        </h2>
+                        <p class="text-slate-600 mb-8 leading-relaxed">
+                            Whether you've found a bug, have a feature request,
+                            or just want to say hello, I'm here to help make
+                            Intro Skipper even better.
                         </p>
+
+                        <div class="space-y-6">
+                            <div
+                                class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-slate-100"
+                            >
+                                <div class="flex items-start gap-4">
+                                    <span class="text-2xl">🚀</span>
+                                    <div>
+                                        <h3 class="font-bold text-lg mb-1">
+                                            Feature Requests
+                                        </h3>
+                                        <p class="text-slate-500 text-sm">
+                                            Got ideas for new streaming services
+                                            or features?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-slate-100"
+                            >
+                                <div class="flex items-start gap-4">
+                                    <span class="text-2xl">🐛</span>
+                                    <div>
+                                        <h3 class="font-bold text-lg mb-1">
+                                            Bug Reports
+                                        </h3>
+                                        <p class="text-slate-500 text-sm">
+                                            Found something that's not working
+                                            right?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 border border-slate-100"
+                            >
+                                <div class="flex items-start gap-4">
+                                    <span class="text-2xl">💡</span>
+                                    <div>
+                                        <h3 class="font-bold text-lg mb-1">
+                                            General Feedback
+                                        </h3>
+                                        <p class="text-slate-500 text-sm">
+                                            Share your thoughts on how we can
+                                            improve.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8 pt-8 border-t border-slate-200">
+                            <p class="text-slate-500">
+                                You can also reach out via
+                                <a
+                                    href="https://github.com/dsouravcom/intro-skipper-ext/issues"
+                                    target="_blank"
+                                    class="text-primary font-medium hover:underline"
+                                    >GitHub Issues</a
+                                >
+                                or email directly at
+                                <a
+                                    href="mailto:hello@sourav.dev"
+                                    class="text-primary font-medium hover:underline"
+                                    >hello@sourav.dev</a
+                                >.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-white p-8 rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100 reveal delay-300"
+                    >
+                        <form
+                            action="https://formspree.io/f/xpwzqzql"
+                            method="POST"
+                            class="space-y-6"
+                        >
+                            <div>
+                                <label
+                                    for="name"
+                                    class="block text-sm font-medium text-slate-700 mb-2"
+                                    >Name</label
+                                >
+                                <input
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    required
+                                    class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                                    placeholder="Your name"
+                                />
+                            </div>
+
+                            <div>
+                                <label
+                                    for="email"
+                                    class="block text-sm font-medium text-slate-700 mb-2"
+                                    >Email</label
+                                >
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    required
+                                    class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                                    placeholder="your@email.com"
+                                />
+                            </div>
+
+                            <div>
+                                <label
+                                    for="message"
+                                    class="block text-sm font-medium text-slate-700 mb-2"
+                                    >Message</label
+                                >
+                                <textarea
+                                    name="message"
+                                    id="message"
+                                    rows="4"
+                                    required
+                                    class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                                    placeholder="How can we help?"
+                                ></textarea>
+                            </div>
+
+                            <button
+                                type="submit"
+                                class="w-full magnetic-btn bg-secondary text-white font-bold py-4 rounded-xl hover:bg-primary transition-colors shadow-lg shadow-secondary/20"
+                            >
+                                Send Message
+                            </button>
+                        </form>
                     </div>
                 </div>
-                
-                <div class="bg-white p-8 rounded-3xl shadow-xl shadow-slate-200/50 border border-slate-100 reveal delay-300">
-                    <form action="https://formspree.io/f/xpwzqzql" method="POST" class="space-y-6">
-                        <div>
-                            <label for="name" class="block text-sm font-medium text-slate-700 mb-2">Name</label>
-                            <input type="text" name="name" id="name" required class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all" placeholder="Your name">
-                        </div>
-                        
-                        <div>
-                            <label for="email" class="block text-sm font-medium text-slate-700 mb-2">Email</label>
-                            <input type="email" name="email" id="email" required class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all" placeholder="your@email.com">
-                        </div>
-                        
-                        <div>
-                            <label for="message" class="block text-sm font-medium text-slate-700 mb-2">Message</label>
-                            <textarea name="message" id="message" rows="4" required class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all" placeholder="How can we help?"></textarea>
-                        </div>
-                        
-                        <button type="submit" class="w-full magnetic-btn bg-secondary text-white font-bold py-4 rounded-xl hover:bg-primary transition-colors shadow-lg shadow-secondary/20">
-                            Send Message
-                        </button>
-                    </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-white py-12 border-t border-slate-100">
+            <div
+                class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6"
+            >
+                <div class="flex items-center gap-2">
+                    <img
+                        src="assets/icons/logo.svg"
+                        alt="Logo"
+                        class="w-6 h-6 opacity-80"
+                    />
+                    <span class="font-serif font-bold text-lg text-slate-800"
+                        >Intro Skipper</span
+                    >
+                </div>
+
+                <div class="flex gap-8 text-sm font-medium text-slate-500">
+                    <a
+                        href="contact.html"
+                        class="text-primary transition-colors"
+                        >Contact</a
+                    >
+                    <a
+                        href="privacy.html"
+                        class="hover:text-primary transition-colors"
+                        >Privacy</a
+                    >
+                    <a
+                        href="https://github.com/dsouravcom/intro-skipper-ext"
+                        class="hover:text-primary transition-colors"
+                        >GitHub</a
+                    >
+                </div>
+
+                <div
+                    class="text-sm text-slate-400 flex flex-col items-center md:items-end"
+                >
+                    <span>&copy; <span id="year"></span> Intro Skipper.</span>
+                    <span class="mt-1"
+                        >Made by
+                        <a
+                            href="https://sourav.dev"
+                            target="_blank"
+                            class="hover:text-primary transition-colors"
+                            >Sourav</a
+                        >
+                        with <span class="text-red-500">♥</span></span
+                    >
                 </div>
             </div>
-        </div>
-    </section>
+        </footer>
 
-    <!-- Footer -->
-    <footer class="bg-white py-12 border-t border-slate-100">
-        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
-            <div class="flex items-center gap-2">
-                <img src="assets/icons/logo.svg" alt="Logo" class="w-6 h-6 opacity-80">
-                <span class="font-serif font-bold text-lg text-slate-800">Intro Skipper</span>
-            </div>
-            
-            <div class="flex gap-8 text-sm font-medium text-slate-500">
-                <a href="contact.html" class="text-primary transition-colors">Contact</a>
-                <a href="privacy.html" class="hover:text-primary transition-colors">Privacy</a>
-                <a href="https://github.com/dsouravcom/intro-skipper-ext" class="hover:text-primary transition-colors">GitHub</a>
-            </div>
-            
-            <div class="text-sm text-slate-400">
-                &copy; <span id="year"></span> Intro Skipper.
-            </div>
+        <!-- Ko-fi Button -->
+        <div
+            class="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2 group"
+        >
+            <span
+                class="px-4 py-2 bg-slate-800 text-white text-sm font-medium rounded-xl shadow-xl opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0 pointer-events-none whitespace-nowrap relative"
+            >
+                Support me with a tip ☕
+                <span
+                    class="absolute -bottom-1 right-4 w-3 h-3 bg-slate-800 transform rotate-45"
+                ></span>
+            </span>
+            <a
+                href="https://ko-fi.com/souravdotdev"
+                target="_blank"
+                class="shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                aria-label="Buy me a coffee"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="50px"
+                    height="50px"
+                    aria-label="Ko-Fi"
+                    role="img"
+                    viewBox="0 0 512 512"
+                >
+                    <rect width="512" height="512" rx="15%" fill="#478db1" />
+                    <path
+                        fill="#fff"
+                        d="M371 140H100c-18 0-20 20 -20 20v184s3 40 40 40h188c41 0 40-40 40 -40v-26h23a89 89 0 000-178m0 132h-23v-86h23a43 43 0 010 86"
+                    />
+                    <path
+                        fill="#f1464d"
+                        d="M286 219c-10-30-63-33-77 3-15-36-67-33-77-3-7 19-4 35 9 54s68 64 68 64 56-45 68-64 15-35 9-54"
+                    />
+                </svg>
+            </a>
         </div>
-    </footer>
 
-    <script src="assets/script.js"></script>
-</body>
+        <script src="assets/script.js"></script>
+    </body>
 </html>

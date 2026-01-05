@@ -364,9 +364,7 @@
                             alt="Hotstar"
                             class="w-12 h-12 grayscale hover:grayscale-0 transition-all duration-500"
                         />
-                        <span class="font-medium text-slate-700"
-                            >Hotstar</span
-                        >
+                        <span class="font-medium text-slate-700">Hotstar</span>
                     </div>
                     <div
                         class="bg-white px-10 py-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow flex flex-col items-center gap-4 w-48 reveal delay-200"
@@ -483,11 +481,62 @@
                     >
                 </div>
 
-                <div class="text-sm text-slate-400">
-                    &copy; <span id="year"></span> Intro Skipper.
+                <div
+                    class="text-sm text-slate-400 flex flex-col items-center md:items-end"
+                >
+                    <span>&copy; <span id="year"></span> Intro Skipper.</span>
+                    <span class="mt-1"
+                        >Made by
+                        <a
+                            href="https://sourav.dev"
+                            target="_blank"
+                            class="hover:text-primary transition-colors"
+                            >Sourav</a
+                        >
+                        with <span class="text-red-500">♥</span></span
+                    >
                 </div>
             </div>
         </footer>
+
+        <!-- Ko-fi Button -->
+        <div
+            class="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2 group"
+        >
+            <span
+                class="px-4 py-2 bg-slate-800 text-white text-sm font-medium rounded-xl shadow-xl opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0 pointer-events-none whitespace-nowrap relative"
+            >
+                Support me with a tip ☕
+                <span
+                    class="absolute -bottom-1 right-4 w-3 h-3 bg-slate-800 transform rotate-45"
+                ></span>
+            </span>
+            <a
+                href="https://ko-fi.com/souravdotdev"
+                target="_blank"
+                class="shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                aria-label="Buy me a coffee"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="50px"
+                    height="50px"
+                    aria-label="Ko-Fi"
+                    role="img"
+                    viewBox="0 0 512 512"
+                >
+                    <rect width="512" height="512" rx="15%" fill="#478db1" />
+                    <path
+                        fill="#fff"
+                        d="M371 140H100c-18 0-20 20 -20 20v184s3 40 40 40h188c41 0 40-40 40 -40v-26h23a89 89 0 000-178m0 132h-23v-86h23a43 43 0 010 86"
+                    />
+                    <path
+                        fill="#f1464d"
+                        d="M286 219c-10-30-63-33-77 3-15-36-67-33-77-3-7 19-4 35 9 54s68 64 68 64 56-45 68-64 15-35 9-54"
+                    />
+                </svg>
+            </a>
+        </div>
 
         <script src="assets/script.js"></script>
     </body>
